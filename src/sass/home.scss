@@ -530,6 +530,12 @@
   }
 }
 
+.fund1 {
+  @media screen and (max-width: 600px) {
+    flex-direction: column-reverse;
+  }
+}
+
 .metodologia {
   display: flex;
   justify-content: center;
@@ -708,6 +714,63 @@
         color: $rosa;
       }
     }
+
+    position: relative;
+
+    .nav-depo {
+      position: absolute;
+      gap: 1rem;
+      right: 7rem;
+      z-index: 99999;
+      display: flex;
+      gap: 1rem;
+      bottom: -4rem;
+
+      .swiper-button-prev {
+        background-color: $verde;
+        border-radius: 0.4rem;
+        width: 2.6rem;
+        height: 2.6rem;
+        display: flex;
+        place-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: all 0.2s;
+        position: unset;
+
+        img {
+          margin-right: 3px;
+        }
+
+        &:hover {
+          filter: brightness(1.2);
+        }
+
+        &::after {
+          content: unset;
+        }
+      }
+
+      .swiper-button-next {
+        background-color: $verde;
+        border-radius: 0.4rem;
+        width: 2.6rem;
+        height: 2.6rem;
+        display: flex;
+        place-items: center;
+        justify-content: center;
+        cursor: pointer;
+        position: unset;
+
+        &:hover {
+          filter: brightness(1.2);
+        }
+
+        &::after {
+          content: unset;
+        }
+      }
+    }
   }
 
   .title-container {
@@ -752,6 +815,60 @@
     border: none;
   }
 
+  .slider-container {
+    display: flex;
+    position: relative;
+
+    .swiper {
+      width: 536px;
+      height: 378px;
+    }
+
+    .nav-depo {
+      position: absolute;
+      right: 0rem;
+      z-index: 99;
+      display: flex;
+      gap: 1rem;
+      bottom: -5rem;
+
+      .video-button-prev {
+        background-color: $laranja;
+        border-radius: 0.4rem;
+        width: 2.6rem;
+        height: 2.6rem;
+        display: flex;
+        place-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: all 0.2s;
+
+        img {
+          margin-right: 3px;
+        }
+
+        &:hover {
+          filter: brightness(1.2);
+        }
+      }
+
+      .video-button-next {
+        background-color: $laranja;
+        border-radius: 0.4rem;
+        width: 2.6rem;
+        height: 2.6rem;
+        display: flex;
+        place-items: center;
+        justify-content: center;
+        cursor: pointer;
+
+        &:hover {
+          filter: brightness(1.2);
+        }
+      }
+    }
+  }
+
   @media screen and (max-width: 600px) {
     margin: auto;
 
@@ -764,6 +881,71 @@
 
     .video {
       max-width: 80vw;
+    }
+
+    .slider-container {
+      width: 80vw;
+    }
+  }
+}
+
+.series {
+  display: flex;
+  width: 100vw;
+  background-color: #fff5d8;
+
+  .slider-container {
+    display: flex;
+    width: 100vw;
+    position: relative;
+
+    .nav-depo {
+      position: absolute;
+      top: 2rem;
+      right: 2rem;
+      z-index: 99999;
+      display: flex;
+      gap: 1rem;
+
+      .serie-button-prev {
+        background-color: $laranja;
+        border-radius: 0.4rem;
+        width: 2.6rem;
+        height: 2.6rem;
+        display: flex;
+        place-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: all 0.2s;
+
+        img {
+          margin-right: 3px;
+        }
+
+        &:hover {
+          filter: brightness(1.2);
+        }
+      }
+
+      .serie-button-next {
+        background-color: $laranja;
+        border-radius: 0.4rem;
+        width: 2.6rem;
+        height: 2.6rem;
+        display: flex;
+        place-items: center;
+        justify-content: center;
+        cursor: pointer;
+
+        &:hover {
+          filter: brightness(1.2);
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .nav-depo {
+      right: 3rem;
     }
   }
 }
