@@ -536,6 +536,98 @@
   }
 }
 
+.precos {
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  background-color: #fbf9fc;
+  gap: 10rem;
+  padding-top: 10rem;
+  padding-bottom: 8rem;
+
+  .card {
+    border: 2px solid $verde;
+    border-radius: 1rem;
+    background-color: #fff;
+    padding: 2rem 1rem;
+    text-align: center;
+    height: 30rem;
+    width: 30rem;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+      font-family: "omnes-pro", sans-serif;
+      color: $verde;
+      font-size: 3.2rem;
+      line-height: 80%;
+      padding-top: 2rem;
+    }
+
+    h4 {
+      font-weight: 400;
+      font-size: 2.8rem;
+    }
+
+    p {
+      font-weight: bold;
+      font-size: 2.4rem;
+      color: #485163;
+    }
+
+    h6 {
+      font-size: 1.4rem;
+      font-family: "omnes-pro", sans-serif;
+      line-height: 90%;
+    }
+
+    .laranja {
+      color: $laranja;
+    }
+
+    .rosa {
+      color: $rosa;
+    }
+  }
+
+  .card.laranja {
+    border-color: $laranja;
+  }
+
+  .card.rosa {
+    border-color: $rosa;
+  }
+
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+    text-align: center;
+    gap: 4rem;
+
+    .left {
+      h2 {
+        font-size: 1.6rem;
+        margin-bottom: 1.4rem;
+      }
+      h4 {
+        font-size: 2.4rem;
+      }
+    }
+
+    .right {
+      .pontos-container {
+        justify-content: center;
+        place-items: center;
+        width: 100%;
+      }
+
+      p {
+        font-size: 1.8rem;
+      }
+    }
+  }
+}
+
 .metodologia {
   display: flex;
   justify-content: center;
