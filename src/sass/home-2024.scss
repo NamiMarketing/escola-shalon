@@ -41,6 +41,7 @@
       max-width: 27.6rem;
       margin-top: 6rem;
       margin-bottom: 3rem;
+      z-index: 1;
     }
 
     .trinta-anos {
@@ -93,6 +94,10 @@
 
     .banner-left-lines {
       display: none;
+    }
+
+    .trinta-anos {
+      max-width: 8rem !important;
     }
 
     h1 {
@@ -197,6 +202,7 @@
   justify-content: center;
   place-items: center;
   position: relative;
+  z-index: 1;
 
   .cards-container {
     display: flex;
@@ -205,6 +211,7 @@
     margin-bottom: 9rem;
     border-bottom: 1px solid $verde;
     padding-bottom: 10rem;
+    z-index: 1;
 
     .card {
       max-width: 15.8rem;
@@ -275,6 +282,18 @@
     .cards-container {
       flex-wrap: wrap;
       justify-content: center;
+
+      .card {
+        .tag {
+          top: -3.2rem;
+          left: 0;
+        }
+      }
+    }
+
+    .lines1 {
+      top: -28rem;
+      right: -8rem;
     }
   }
 }
@@ -426,12 +445,23 @@
 
       .circles-container {
         flex-direction: column;
-        height: 533px;
-        margin-top: 45px;
+        height: 780px;
+        gap: 2rem;
 
         .circle {
-          height: 7.9rem;
+          // height: 7.9rem;
           width: 7.9rem;
+          margin-left: 8rem;
+        }
+
+        .amarelo {
+          margin-bottom: 0;
+          margin-left: -4rem;
+        }
+
+        .rosa {
+          margin-bottom: 0;
+          margin-left: -4rem;
         }
       }
 
@@ -445,11 +475,10 @@
       .top-titles {
         flex-direction: column;
         text-align: left;
-        margin-left: 0;
-        margin-top: 17rem;
-        margin-left: 2rem;
+        margin-top: 25rem;
+        margin-left: -2rem;
         margin-right: 0;
-        gap: 16rem;
+        gap: 27rem;
 
         .content {
           h3 {
@@ -464,9 +493,9 @@
       .botton-titles {
         flex-direction: column;
         text-align: right;
-        margin-top: 5rem;
-        margin-right: 2rem;
-        gap: 16rem;
+        margin-top: 2rem;
+        margin-right: 0rem;
+        gap: 33rem;
 
         .content {
           h3 {
