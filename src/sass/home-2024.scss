@@ -344,6 +344,7 @@
     display: flex;
     flex-direction: column;
     width: 98.6rem;
+    z-index: 1;
 
     .top-titles {
       display: flex;
@@ -352,6 +353,7 @@
       margin-right: 20px;
       gap: 27rem;
       margin-bottom: -8rem;
+      z-index: 1;
 
       .amarelo {
         color: $amarelo;
@@ -366,6 +368,7 @@
       display: flex;
       gap: 29rem;
       text-align: center;
+      z-index: 1;
 
       .verde {
         color: $verde;
@@ -374,6 +377,10 @@
 
     .circles-container {
       display: flex;
+      z-index: 1;
+      img {
+        z-index: 1;
+      }
 
       .circle {
         width: 14.4rem;
@@ -430,21 +437,19 @@
     width: 37.8rem;
   }
 
-  @media screen and (max-width: 600px) {
-    .lines1 {
-      top: -16rem;
-      right: -14rem;
-    }
+  .lines2 {
+    position: absolute;
+    left: 0;
+    bottom: 4rem;
+    z-index: 0;
+  }
 
+  @media screen and (max-width: 600px) {
     .lines2 {
       bottom: 8rem;
       left: -12rem;
       z-index: 1;
-    }
-
-    .lines3 {
-      right: -4%;
-      top: 49%;
+      width: 89%;
     }
 
     .pilares {
@@ -529,6 +534,8 @@
 
   img {
     object-fit: contain;
+    padding: 2rem;
+    max-height: 406px;
   }
 
   .content {
@@ -676,13 +683,15 @@
   display: flex;
   justify-content: center;
   place-items: center;
-  background-color: #fbf9fc;
   gap: 10rem;
-  padding-top: 10rem;
-  padding-bottom: 8rem;
+  padding-top: 22rem;
+  padding-bottom: 28rem;
+  position: relative;
+  overflow: hidden;
 
   .left {
     width: 40.7rem;
+    z-index: 1;
 
     h2 {
       font-weight: 400;
@@ -703,6 +712,7 @@
 
   .right {
     width: 40.7rem;
+    z-index: 1;
 
     .pontos-container {
       display: grid;
@@ -721,12 +731,24 @@
     }
   }
 
+  .lines3 {
+    position: absolute;
+    bottom: -3rem;
+    right: 0;
+  }
+
   @media screen and (max-width: 600px) {
     flex-direction: column;
     text-align: center;
     gap: 4rem;
+    padding-top: 6rem;
 
     .left {
+      display: flex;
+      flex-direction: column;
+      place-items: center;
+      max-width: 100vw;
+
       h2 {
         font-size: 1.6rem;
         margin-bottom: 1.4rem;
@@ -737,15 +759,24 @@
     }
 
     .right {
+      max-width: 100vw;
+      width: 90%;
+
       .pontos-container {
         justify-content: center;
         place-items: center;
-        width: 100%;
       }
 
       p {
         font-size: 1.8rem;
       }
+    }
+
+    .lines3 {
+      bottom: 37px;
+      right: 0;
+      width: 138%;
+      transform: rotate(70deg);
     }
   }
 }
@@ -774,6 +805,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-color: #c6df5f;
+  padding-top: 4rem;
 
   .title-container {
     display: flex;
@@ -804,7 +837,7 @@
   .slider-container {
     display: flex;
     position: relative;
-    margin-bottom: 15rem;
+    margin-bottom: 9rem;
 
     .swiper-wrapper {
       padding: 0 9rem;
@@ -910,6 +943,10 @@
   }
 
   .title-container {
+    h2 {
+      color: #f07402;
+    }
+
     .lines {
       position: absolute;
       left: -5%;
@@ -922,7 +959,8 @@
 .carinho {
   display: flex;
   flex-direction: column;
-  margin-bottom: 19rem;
+  margin-bottom: 12rem;
+  padding-top: 6rem;
 
   > div {
     display: flex;
@@ -1091,6 +1129,16 @@
   flex-direction: column;
   justify-content: center;
   place-items: center;
+  background: #fffcf5;
+  padding-top: 12rem;
+  position: relative;
+  padding-bottom: 14rem;
+
+  .lines4 {
+    position: absolute;
+    left: 0;
+    top: -14rem;
+  }
 
   .title-container {
     display: flex;
@@ -1220,10 +1268,10 @@
   justify-content: center;
   place-items: center;
   gap: 7.3rem;
-  padding-bottom: 15.3rem;
   background-color: #faf9fd;
   padding-left: 10%;
   position: relative;
+  padding-top: 6rem;
 
   .elementos {
     position: absolute;
@@ -1233,7 +1281,6 @@
 
   .video {
     border-radius: 4rem;
-    margin-top: -3rem;
   }
 
   .content {
@@ -1268,6 +1315,61 @@
     .video {
       max-width: 80vw;
       margin-top: 0;
+    }
+  }
+}
+
+.ingles {
+  background: #c6df5f;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  place-items: center;
+  text-align: center;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+
+  h2 {
+    color: #fff;
+    text-align: center;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%; /* 48px */
+    letter-spacing: -0.72px;
+  }
+
+  p {
+    max-width: 800px;
+    padding: 2rem;
+  }
+
+  .cards {
+    display: flex;
+    gap: 16rem;
+    margin-top: 2rem;
+
+    .card {
+      width: 271px;
+      height: 364px;
+      border-radius: 10px;
+      background: #f9f6fb;
+      display: flex;
+      flex-direction: column;
+      place-items: center;
+      text-align: center;
+      padding: 3rem 1.5rem;
+
+      p {
+        padding: 0;
+        margin-top: 1rem;
+        color: var(--Cinza-01, #485163);
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: -0.3px;
+      }
     }
   }
 }
@@ -1316,6 +1418,8 @@
     margin-right: 3rem;
     margin-bottom: 8.4rem;
     position: relative;
+    border-top: 1px solid $verde;
+    padding-top: 8rem;
 
     .line1 {
       position: absolute;
