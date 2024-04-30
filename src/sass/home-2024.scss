@@ -1725,6 +1725,7 @@ footer {
       display: flex;
       flex-direction: column;
       margin-right: 10rem;
+      z-index: 3;
 
       a {
         font-weight: 600;
