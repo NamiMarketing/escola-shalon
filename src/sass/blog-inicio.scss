@@ -103,10 +103,20 @@ h4 {
   display: flex;
   position: relative;
 
-  .categoria-main {
+  .categoria-main,
+  .categoria-side {
     position: absolute;
     bottom: 0;
   }
+}
+
+.categoria-side {
+  background: $verde-escuro;
+  color: white;
+  font-weight: 600;
+  padding: 0 1rem;
+  font-size: 1.2rem;
+  border-radius: 4px;
 }
 
 .titulo-data {
@@ -129,8 +139,9 @@ h4 {
   padding-left: 15rem;
   padding-right: 15rem;
   margin-bottom: 15rem;
-  gap: 4rem;
+  gap: 3rem;
   justify-content: space-between;
+  width: 100%;
 }
 
 .ultimos img {
@@ -139,7 +150,7 @@ h4 {
   margin-bottom: 0.5rem;
 }
 .ultimos > div {
-width: 277px;
+  max-width: 260px;
 }
 
 .ultimos .resumo {
@@ -152,6 +163,7 @@ width: 277px;
   padding: 0 1rem;
   font-size: 1.2rem;
   border-radius: 4px;
+  text-transform: uppercase;
 }
 
 /*FOOTER*/
@@ -242,7 +254,7 @@ footer {
 
 /*MEDIA*/
 
-@media screen and (max-width: 556px) {
+@media screen and (max-width: 910px) {
   .main-head {
     padding-left: 5rem;
     padding-bottom: 10rem;
@@ -250,6 +262,14 @@ footer {
     h2 {
       font-size: 3rem;
     }
+  }
+  .categoria-side {
+    background: $verde-escuro;
+    color: white;
+    font-weight: 600;
+    padding: 0 0.5rem;
+    font-size: 0.8rem;
+    border-radius: 4px;
   }
 
   .novidade {
@@ -275,9 +295,8 @@ footer {
   }
 
   .ultimos {
-    padding-left: 5rem;
-    padding-right: 5rem;
     margin-bottom: 5rem;
+    justify-content: space-between;
   }
 
   .top {

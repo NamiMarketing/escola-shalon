@@ -1621,7 +1621,7 @@
 
 .pre-footer {
   color: #ffffff;
-  background: #a8c51b;
+  background: $laranja-claro;
   display: flex;
   flex-direction: column;
   padding-top: 8rem;
@@ -1660,6 +1660,7 @@
     position: absolute;
     bottom: -46rem;
     right: 0;
+    z-index: 1;
   }
 
   @media screen and (max-width: 600px) {
@@ -1686,15 +1687,19 @@ footer {
   background-color: $verde;
   display: flex;
   flex-direction: column;
-  color: $white;
   place-items: center;
-  justify-content: center;
+  justify-content: space-around;
   padding-bottom: 4rem;
+  max-width: 100%;
+  position: relative;
 
   a {
-    color: #fff;
+    color: $verde-escuro;
   }
-
+  p {
+    font-weight: 600;
+    color: $verde-escuro;
+  }
   .top {
     display: flex;
     justify-content: space-between;
@@ -1718,6 +1723,7 @@ footer {
         line-height: 2.2rem;
         letter-spacing: -0.015em;
         margin-left: 4rem;
+        color: $verde-escuro;
       }
     }
 
@@ -1736,6 +1742,7 @@ footer {
       p {
         font-weight: 400;
         margin-top: -1rem;
+        color: $verde-escuro;
       }
 
       > div {
@@ -1746,13 +1753,17 @@ footer {
     }
   }
 
-  .line {
+  .divisoria-laranja {
     display: block;
-    height: 0.05rem;
-    background-color: #fff;
-    width: 80vw;
-    margin-top: 4rem;
-    margin-bottom: 2rem;
+    width: 80%;
+    border-bottom: 3px solid $laranja;
+    margin: 2% 0;
+  }
+
+  .footer-cores {
+    max-width: 70%;
+    position: absolute;
+    bottom: 0;
   }
 
   @media screen and (max-width: 600px) {
