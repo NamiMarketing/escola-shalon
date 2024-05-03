@@ -1,0 +1,256 @@
+@import "./parts/global";
+@import "./parts/colors";
+@import "./parts/buttons";
+@import "./parts/fonts";
+
+.main-head {
+  background: $verde;
+  padding-left: 15rem;
+  padding-bottom: 10rem;
+  padding-right: 15rem;
+
+  a {
+    color: white;
+  }
+  h1 {
+    margin-top: 5rem;
+    font-size: 2rem;
+    font-weight: 400;
+    color: $cinza;
+    letter-spacing: 0.1rem;
+  }
+  h2 {
+    color: $laranja;
+    font-size: 4.5rem;
+  }
+  .voltar {
+    font-weight: 600;
+    font-size: 1.5rem;
+    padding: 0.2rem 1rem;
+    line-height: 2rem;
+    justify-content: space-around;
+    max-width: 100px;
+    margin-top: 2rem;
+  }
+}
+
+h4 {
+  color: $laranja;
+  font-size: 1.5rem;
+}
+
+.data {
+  color: $laranja-claro;
+  font-size: 1.2rem;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/*posts principais section*/
+
+.novidade {
+  padding-left: 15rem;
+  padding-right: 15rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: -6rem;
+  gap: 4rem;
+
+  .principal {
+    grid-column: 1/3;
+
+    img {
+      object-fit: cover;
+      width: 100%;
+      grid-row: 1/3;
+    }
+  }
+
+  .sidebar {
+    img {
+      object-fit: cover;
+      width: 100%;
+    }
+  }
+  h3 {
+    color: $laranja;
+    font-size: 3rem;
+  }
+}
+.sidebar > div {
+  margin-bottom: 4rem;
+}
+.divisoria {
+  border-bottom: 1px solid $verde;
+  margin-left: 15rem;
+  margin-right: 15rem;
+  margin-top: 5%;
+}
+span {
+  background: $verde-escuro;
+  color: white;
+  font-weight: 600;
+  padding: 0 1rem;
+  font-size: 1.2rem;
+  border-radius: 4px;
+}
+
+/* ULTIMOS POSTS SECTION */
+
+.rosa {
+  color: $rosa;
+  font-size: 3rem;
+  padding-left: 15rem;
+  margin-top: 5%;
+  padding-bottom: 3rem;
+}
+.ultimos {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 15rem;
+  padding-right: 15rem;
+  margin-bottom: 15rem;
+  gap: 4rem;
+}
+
+.ultimos img {
+  max-width: 100%;
+  display: block;
+  margin-bottom: 1rem;
+}
+.ultimos > div {
+  flex: 1 1 25%;
+}
+
+.ultimos .resumo {
+  text-align: start;
+}
+
+/*FOOTER*/
+
+footer {
+  background-color: $verde;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  justify-content: space-around;
+  padding-bottom: 4rem;
+  max-width: 100%;
+  position: relative;
+
+  a {
+    color: $verde-escuro;
+  }
+  p {
+    font-weight: 600;
+    color: $verde-escuro;
+  }
+  .top {
+    display: flex;
+    justify-content: space-between;
+    width: 80vw;
+    align-items: center;
+
+    .left {
+      display: flex;
+      flex-direction: column;
+      z-index: 56;
+
+      img {
+        width: 37.6rem;
+        max-width: 90vw;
+      }
+
+      p {
+        max-width: 31.4rem;
+        font-weight: 600;
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+        letter-spacing: -0.015em;
+        margin-left: 4rem;
+        color: $verde-escuro;
+      }
+    }
+
+    .right {
+      display: flex;
+      flex-direction: column;
+      margin-right: 10rem;
+      z-index: 3;
+
+      a {
+        font-weight: 600;
+        font-size: 2rem;
+        line-height: 150%;
+        letter-spacing: -0.015em;
+      }
+      p {
+        font-weight: 400;
+        margin-top: -1rem;
+        color: $verde-escuro;
+      }
+
+      > div {
+        display: flex;
+        gap: 1rem;
+        margin-top: 1rem;
+      }
+    }
+  }
+}
+
+.divisoria-laranja {
+  border-bottom: 3px solid $laranja;
+  margin: 2% 0;
+}
+
+.footer-cores {
+  max-width: 70%;
+  position: absolute;
+  bottom: 0;
+}
+
+/*MEDIA*/
+
+@media screen and (max-width: 556px) {
+  .main-head {
+    padding-left: 5rem;
+    padding-bottom: 10rem;
+    padding-right: 5rem;
+    h2 {
+      font-size: 3rem;
+    }
+  }
+
+  .novidade {
+    padding-left: 5rem;
+    padding-right: 5rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: -6rem;
+    gap: 4rem;
+
+    .sidebar {
+      display: flex;
+      overflow: scroll;
+
+      > div {
+        margin: 0 2%;
+      }
+    }
+  }
+
+  .rosa {
+    padding-left: 5rem;
+  }
+
+  .ultimos {
+    padding-left: 5rem;
+    padding-right: 5rem;
+    margin-bottom: 5rem;
+  }
+}

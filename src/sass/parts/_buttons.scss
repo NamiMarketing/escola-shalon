@@ -39,3 +39,23 @@
     filter: brightness(0.8);
   }
 }
+
+.darkGreenButton {
+  background-color: $verde-escuro;
+  padding: 1.3rem 1.3rem;
+  border: none;
+  font-size: 1.8rem;
+  color: $white;
+  font-weight: 500;
+  transition: filter 0.2s;
+  border-radius: 5rem;
+  text-transform: uppercase;
+  display: flex;
+  place-items: center;
+  justify-content: center;
+  z-index: 999;
+
+  &:hover {
+    filter: brightness(0.8);
+  }
+}
