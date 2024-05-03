@@ -86,17 +86,32 @@ h4 {
 }
 .divisoria {
   border-bottom: 1px solid $verde;
-  margin-left: 15rem;
-  margin-right: 15rem;
+  display: block;
+  align-self: center;
+  width: 70%;
   margin-top: 5%;
 }
-span {
+.categoria-main {
   background: $verde-escuro;
   color: white;
   font-weight: 600;
   padding: 0 1rem;
   font-size: 1.2rem;
   border-radius: 4px;
+}
+.foto-categoria {
+  display: flex;
+  position: relative;
+
+  .categoria-main {
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+.titulo-data {
+  display: flex;
+  justify-content: space-between;
 }
 
 /* ULTIMOS POSTS SECTION */
@@ -115,19 +130,28 @@ span {
   padding-right: 15rem;
   margin-bottom: 15rem;
   gap: 4rem;
+  justify-content: space-between;
 }
 
 .ultimos img {
   max-width: 100%;
   display: block;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 .ultimos > div {
-  flex: 1 1 25%;
+width: 277px;
 }
 
 .ultimos .resumo {
   text-align: start;
+}
+.categoria {
+  background: $verde-escuro;
+  color: white;
+  font-weight: 600;
+  padding: 0 1rem;
+  font-size: 1.2rem;
+  border-radius: 4px;
 }
 
 /*FOOTER*/
@@ -204,6 +228,8 @@ footer {
 }
 
 .divisoria-laranja {
+  display: block;
+  width: 80%;
   border-bottom: 3px solid $laranja;
   margin: 2% 0;
 }
