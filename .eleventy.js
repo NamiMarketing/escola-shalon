@@ -6,11 +6,13 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./src/admin");
 
   eleventyConfig.addFilter("postDate", dateObj => {
-    return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED);
+    return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_SHORT);
   });
 
-  eleventyConfig.addNunjucksFilter("limit", (arr, limit) =>
-    arr?.slice(0, limit)
+  eleventyConfig.addNunjucksFilter("limit", (arr, limit) => {
+    // console.log(arr)
+    return arr?.slice(0, limit)
+  }
   );
 
   return {
