@@ -7,6 +7,7 @@ collections: ["post"]
 ---
 
 {% include 'header.njk' %}
+
 <section class="novidade">
   <div class="principal">
     <div class="foto-categoria">
@@ -70,7 +71,7 @@ collections: ["post"]
       <p class="data">{{ post.data.date | postDate }}</p>
       <h4>{{ post.data.title }}</h4>
       <p class="resumo">
-        {{ post._templateContent | safe }}
+        {{ post.data.description | safe }}
       </p>
     </div>
   </a>

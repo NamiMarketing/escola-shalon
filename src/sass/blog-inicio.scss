@@ -142,19 +142,21 @@ h4 {
   gap: 3rem;
   justify-content: space-between;
   width: 100%;
+  img {
+    max-width: 100%;
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  .ultimos-item {
+    max-width: 260px;
+  }
+  a {
+    color: $cinza;
+  }
 }
 
-.ultimos img {
-  max-width: 100%;
-  display: block;
-  margin-bottom: 0.5rem;
-}
-.ultimos > div {
-  max-width: 260px;
-}
-
-.ultimos .resumo {
-  text-align: start;
+.ultimos .ultimos-item .resumo {
+  text-align: justify;
 }
 .categoria {
   background: $verde-escuro;
@@ -297,6 +299,8 @@ footer {
   .ultimos {
     margin-bottom: 5rem;
     justify-content: space-between;
+    padding-left: 5rem;
+    padding-right: 5rem;
   }
 
   .top {
