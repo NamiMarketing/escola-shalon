@@ -1,8 +1,10 @@
 ---
 title: Blog
 layout: "base.njk"
-cssPath: "/css/article.css"
+cssPath: "/css/blog-inicio.css"
 ---
+
+{% include 'header.njk' %}
 
 <article>
   <section class="info-container">
@@ -74,3 +76,5 @@ cssPath: "/css/article.css"
     {%- endfor %}
   </ul>
 </div>
+
+{% include 'footer.njk' %}
