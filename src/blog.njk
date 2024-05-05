@@ -6,15 +6,14 @@ eleventyImport:
 collections: ["post"]
 ---
 
-{% include 'header.njk' %}
+{% from 'macros/header.njk' import header %}
+
+{{ header(backLink = "/") }}
 
 <section class="novidade">
   <div class="principal">
     <div class="foto-categoria">
-      <img
-        src="../img/Blog/kids-with-tablet-couch 1.svg"
-        alt="crianças com tablet"
-      />
+      <img src="../img/Blog/kids-with-tablet-couch 1.svg" alt="crianças com tablet" />
       <span class="categoria-main">CATEGORIA BLOG</span>
     </div>
     <div class="titulo-data">
@@ -27,8 +26,7 @@ collections: ["post"]
       <div class="foto-categoria">
         <img
           src="../img/Blog/positive-cute-teenagers-sit-bench-look-camera-smile-cute-boys-girls-schoolchildren-outdoors 1.svg"
-          alt=""
-        />
+          alt="" />
         <span class="categoria-side">CATEGORIA BLOG</span>
       </div>
       <div class="titulo-data">
@@ -38,10 +36,7 @@ collections: ["post"]
     </div>
     <div>
       <div class="foto-categoria">
-        <img
-          src="../img/Blog/siblings-playing-with-brain-teaser-toys 1.svg"
-          alt=""
-        />
+        <img src="../img/Blog/siblings-playing-with-brain-teaser-toys 1.svg" alt="" />
         <span class="categoria-side">CATEGORIA BLOG</span>
       </div>
       <div class="titulo-data">

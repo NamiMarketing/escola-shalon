@@ -4,7 +4,9 @@ layout: "base.njk"
 cssPath: "/css/blog-inicio.css"
 ---
 
-{% include 'header.njk' %}
+{% from 'macros/header.njk' import header %}
+
+{{ header(backLink = "/blog") }}
 
 <article>
   <div class="foto-blog">
