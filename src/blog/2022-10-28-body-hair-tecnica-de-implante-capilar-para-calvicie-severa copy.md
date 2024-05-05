@@ -1,7 +1,7 @@
 ---
 title: Body Hair - Técnica de implante capilar para calvície severa
-description: Somos pioneiros em Curitiba com a técnica  Body Hair Transplantation (em tradução livre, transplante de pelos corporais), que exige enorme expertise e permite a realização da cirurgia de transplante capilar na maioria dos casos de calvície, incluindo aquelas em estágios mais avançados. 
-date: 2021-10-28T14:27:36.279Z
+description: Somos pioneiros em Curitiba com a técnica  Body Hair Transplantation (em tradução livre, transplante de pelos corporais), que exige enorme expertise e permite a realização da cirurgia de transplante capilar na maioria dos casos de calvície, incluindo aquelas em estágios mais avançados.
+date: 2022-10-28T14:27:36.279Z
 tags:
   - post
   - Categoria Blog

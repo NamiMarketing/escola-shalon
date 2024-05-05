@@ -57,7 +57,7 @@ collections: ["post"]
 <h1 class="rosa">Últimos Posts</h1>
 
 <section class="ultimos">
-  {%- for post in collections.post | limit -%}
+  {%- for post in collections.post | reverse | limit -%}
   <a href="{{ post.url }}">
     <div class="ultimos-item flex">
       <img src="{{ post.data.thumbnail }}" alt="" />
