@@ -7,26 +7,18 @@ cssPath: "/css/blog-inicio.css"
 {% include 'header.njk' %}
 
 <article>
-  <section class="info-container">
-    <p>{{ date | postDate }}</p>
-    <h3>{{ title }}</h3>
-
-    <div class="tags-container">
-      {% for tag in tags -%} {% if tag !== 'post' %}
-      <a href="">{{ tag }}</a>
-      {% endif %} {%- endfor %}
-    </div>
-    {% for tag in tags -%}
-    {% if tag == 'Vídeos' %}
-    <iframe width="545" height="303" src="https://www.youtube.com/embed/{{ video }}" title="YouTube video player"
-      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen></iframe>
-    {% endif %}
-    {%- endfor %}
+  <div class="foto-blog">
     {% if thumbnail %}
     <img src="{{ thumbnail }}" alt="" />
-    {% endif %}
-  </section>
+    {% endif %} {% for tag in tags -%} {% if tag !== 'post' %}
+    <span class="categoria-main">{{ tag }}</span>
+    {% endif %} {%- endfor %}
+    <p class="data">{{ date | postDate }}</p>
+  </div>
+  
+  <div class="titulo-blog">
+    <h3>{{ title }}</h3>
+  </div>
 
   <div class="content-container">
     {{ content | safe }}
@@ -52,21 +44,16 @@ cssPath: "/css/blog-inicio.css"
   {%- endfor %}
 </ul> -->
 
-<img class="article-lines" src="/img/blog/article-lines.svg" alt="" />
-
-<div class="artigos-relacionados">
-  <h5>Artigos relacionados</h5>
+<div class="artigos-relacionados rosa">
+  <h5>Outros Posts</h5>
   {% set postsFiltered = collections.semVideos | limit(3) %}
   <ul>
     {%- for post in postsFiltered -%}
     <li>
       <img src="{{ post.data.thumbnail }}" alt="" />
       <p>
-        {% for tag in post.data.tags -%}
-        {% if tag !== 'post' %}
-        {{ tag }},
-        {% endif %}
-        {%- endfor %}
+        {% for tag in post.data.tags -%} {% if tag !== 'post' %}
+        {{ tag }}, {% endif %} {%- endfor %}
         {{ post.data.date | postDate }}
       </p>
       <a href="{{ post.url }}">

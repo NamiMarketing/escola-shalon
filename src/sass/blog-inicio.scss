@@ -34,11 +34,6 @@
   }
 }
 
-h4 {
-  color: $laranja;
-  font-size: 1.5rem;
-}
-
 .data {
   color: $laranja-claro;
   font-size: 1.2rem;
@@ -76,12 +71,20 @@ h4 {
       width: 100%;
     }
   }
+}
+h4 {
+  color: $laranja;
+  font-size: 1.5rem;
+}
+.titulo-data {
+  display: flex;
+  justify-content: space-between;
   h3 {
     color: $laranja;
     font-size: 3rem;
   }
 }
-.sidebar > div {
+.titulo-data .sidebar > div {
   margin-bottom: 4rem;
 }
 .divisoria {
@@ -119,11 +122,6 @@ h4 {
   border-radius: 4px;
 }
 
-.titulo-data {
-  display: flex;
-  justify-content: space-between;
-}
-
 /* ULTIMOS POSTS SECTION */
 
 .rosa {
@@ -143,9 +141,10 @@ h4 {
   justify-content: space-between;
   width: 100%;
   img {
-    max-width: 100%;
+    max-width: 260px;
     display: block;
     margin-bottom: 0.5rem;
+    object-fit: cover;
   }
   .ultimos-item {
     max-width: 260px;
@@ -323,5 +322,34 @@ footer {
         align-items: center;
       }
     }
+  }
+}
+
+/* BLOG ABERTO 
+//
+//ARTICLE.NJK*/
+
+.content-container {
+  color: $cinza;
+}
+
+.foto-blog {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  padding-left: 15rem;
+  padding-right: 15rem;
+  margin: 0;
+  max-width: 70%;
+
+  .categoria-main {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  p {
+    position: absolute;
+    right: 0;
+    bottom: -2rem;
   }
 }
