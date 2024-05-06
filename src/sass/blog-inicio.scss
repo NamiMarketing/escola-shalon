@@ -255,7 +255,6 @@ footer {
   bottom: 0;
 }
 
-
 /* BLOG ABERTO 
 //
 //ARTICLE.NJK*/
@@ -305,7 +304,6 @@ footer {
   }
 }
 
-
 /*MEDIA*/
 
 @media screen and (max-width: 910px) {
@@ -350,7 +348,7 @@ footer {
 
   .ultimos {
     margin-bottom: 5rem;
-    justify-content: space-between;
+    justify-content: center;
     padding-left: 5rem;
     padding-right: 5rem;
   }
@@ -377,7 +375,7 @@ footer {
     }
   }
 
-  /* ARTICLE ABERTO*/ 
+  /* ARTICLE ABERTO*/
 
   .main-blog {
     padding-left: 5rem;
