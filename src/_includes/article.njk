@@ -8,26 +8,30 @@ cssPath: "/css/blog-inicio.css"
 
 {{ header(backLink = "/blog") }}
 
-<article>
-  <div class="foto-blog">
-    {% if thumbnail %}
-    <img src="{{ thumbnail }}" alt="" />
-    {% endif %} {% for tag in tags -%} {% if tag !== 'post' %}
-    <span class="categoria-main">{{ tag }}</span>
-    {% endif %} {%- endfor %}
-    <p class="data">{{ date | postDate }}</p>
+<section class="main-blog">
+  <div class="head-blog">
+    <div class="foto-blog">
+      {% if thumbnail %}
+      <div class="foto-categoria">
+        <img src="{{ thumbnail }}" alt="" />
+        {% endif %} {% for tag in tags -%} {% if tag !== 'post' %}
+        <span class="categoria-main">{{ tag }}</span>
+      </div>
+      {% endif %} {%- endfor %}
+      <p class="data">{{ date | postDate }}</p>
+    </div>
   </div>
 
-  <div class="titulo-blog">
-    <h3>{{ title }}</h3>
+  <div class="conteudo-blog">
+    <div class="titulo-blog">
+      <h3>{{ title }}</h3>
+    </div>
+    <div class="content-container">
+      <p>{{ texto | safe }}</p>
+    </div>
   </div>
 
-  <div class="content-container">
-    <p>{{ texto | safe }}</p>
-  </div>
-</article>
-
-<!-- {%- for item in pagination.items | reverse -%}
+  <!-- {%- for item in pagination.items | reverse -%}
 <ul class="posts-container">
   <li>
     <img src="{{ item.data.thumbnail }}" alt="" />
@@ -46,24 +50,27 @@ cssPath: "/css/blog-inicio.css"
   {%- endfor %}
 </ul> -->
 
-<div class="artigos-relacionados rosa">
-  <h5>Outros Posts</h5>
-  {% set postsFiltered = collections.semVideos | limit(3) %}
-  <ul>
-    {%- for post in postsFiltered -%}
-    <li>
-      <img src="{{ post.data.thumbnail }}" alt="" />
-      <p>
-        {% for tag in post.data.tags -%} {% if tag !== 'post' %}
-        {{ tag }}, {% endif %} {%- endfor %}
-        {{ post.data.date | postDate }}
-      </p>
-      <a href="{{ post.url }}">
-        {{ post.data.title }}
-      </a>
-    </li>
-    {%- endfor %}
-  </ul>
-</div>
+ <div class="artigos-relacionados rosa sidebar">
+    <h5>Outros Posts</h5>
+    {% set postsFiltered = collections.item | limit(2) %}
+    <ul>
+      {%- for post in postsFiltered -%}
+      <li>
+        <img src="{{ post.data.thumbnail }}" alt="" />
+        <p>
+          {% for tag in post.data.tags -%} {% if tag !== 'post' %}
+          {{ tag }}, {% endif %} {%- endfor %}
+          {{ post.data.date | postDate }}
+        </p>
+        <a href="{{ post.url }}">
+          {{ post.data.title }}
+        </a>
+      </li>
+      {%- endfor %}
+    </ul>
+  </div>
+</section> 
+
+
 
 {% include 'footer.njk' %}

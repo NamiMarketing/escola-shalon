@@ -6,8 +6,5 @@ tags:
   - post
   - Categoria Blog
 thumbnail: /img/Blog/positive-cute-teenagers-sit-bench-look-camera-smile-cute-boys-girls-schoolchildren-outdoors 1.svg
+texto: Somos pioneiros em Curitiba com a técnica  Body Hair Transplantation (em tradução livre, transplante de pelos corporais), que exige enorme expertise e permite a realização da cirurgia de transplante capilar na maioria dos casos de calvície, incluindo aquelas em estágios mais avançados.<br><br>A Gazeta do Povo publicou uma matéria na qual você pode conferir mais detalhadamente como funciona essa técnica inovadora! Leia mais neste <a href="https://bit.ly/3kYKnd7" target="_blank">link</a>.
 ---
-
-Somos pioneiros em Curitiba com a técnica  Body Hair Transplantation (em tradução livre, transplante de pelos corporais), que exige enorme expertise e permite a realização da cirurgia de transplante capilar na maioria dos casos de calvície, incluindo aquelas em estágios mais avançados. 
-<br><br>
-A Gazeta do Povo publicou uma matéria na qual você pode conferir mais detalhadamente como funciona essa técnica inovadora! Leia mais neste <a href="https://bit.ly/3kYKnd7" target="_blank">link</a>.
