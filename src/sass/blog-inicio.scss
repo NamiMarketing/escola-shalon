@@ -45,6 +45,9 @@
   align-items: flex-start;
 }
 
+img {
+  border-radius: 6px;
+}
 /*posts principais section*/
 
 .novidade {
@@ -53,23 +56,49 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin-top: -6rem;
-  gap: 4rem;
+  gap: 3rem;
 
+  .titulo-data {
+    margin-top: -2rem;
+  }
+  .post-principal {
+    grid-row: 4;
+    color: $cinza;
+    margin-top: -2rem;
+    grid-column: 1/3;
+  }
   .principal {
     grid-column: 1/3;
+    grid-row: 1/3;
+
+    .foto-categoria {
+      height: 100%;
+      width: 100%;
+    }
 
     img {
       object-fit: cover;
       width: 100%;
-      grid-row: 1/3;
+      height: 100%;
     }
   }
 
-  .sidebar {
+  .sidebar-item {
+    grid-column: 3/4;
+    max-width: 500px;
+    max-height: 300px;
+
     img {
-      object-fit: cover;
       width: 100%;
+      object-fit: cover;
+      max-height: 270px;
     }
+  }
+  .item-cima {
+    grid-row: 1/2;
+  }
+  .item-baixo {
+    grid-row: 2/3;
   }
 }
 h4 {
@@ -77,16 +106,19 @@ h4 {
   font-size: 1.5rem;
 }
 .titulo-data {
+  grid-column: 1/3;
   display: flex;
   justify-content: space-between;
+
   h3 {
     color: $laranja;
     font-size: 3rem;
   }
 }
-.titulo-data .sidebar > div {
-  margin-bottom: 4rem;
-}
+
+// .titulo-data .sidebar > div {
+//   margin-bottom: 4rem;
+// }
 .divisoria {
   border-bottom: 1px solid $verde;
   display: block;
@@ -288,19 +320,31 @@ footer {
 
   .conteudo-blog {
     grid-column: 1/3;
-
-    p {
-      text-align: justify;
-      font-size: 1.7rem;
-    }
-
     h3 {
       color: $laranja;
       font-size: 3rem;
     }
+    p {
+      text-align: justify;
+      font-size: 1.7rem;
+    }
   }
+
   .sidebar {
     border-left: 1px solid $verde;
+    max-width: 500px;
+    padding-left: 3rem;
+    flex-direction: column;
+
+    img {
+      width: 100%;
+      max-height: 300px;
+      object-fit: cover;
+    }
+    h5 {
+      font-size: 3rem;
+      padding-bottom: 3rem;
+    }
   }
 }
 
@@ -361,25 +405,41 @@ footer {
     color: white;
     font-weight: 600;
     padding: 0 0.5rem;
-    font-size: 0.8rem;
+    font-size: 1.2rem;
     border-radius: 4px;
   }
-
   .novidade {
     padding-left: 5rem;
     padding-right: 5rem;
     display: grid;
-    grid-template-columns: 1fr;
-    margin-top: -6rem;
-    gap: 4rem;
-
-    .sidebar {
-      display: flex;
-      overflow: scroll;
-
-      > div {
-        margin: 0 2%;
+    grid-template-columns: repeat(2, 1fr);
+    .titulo-data {
+      grid-row: 2;
+      margin-top: -2rem;
+    }
+    .post-principal {
+      grid-row: 3;
+      grid-column: 1/3;
+    }
+    .principal {
+      grid-column: 1/3;
+      grid-row: 1/2;
+    }
+    .sidebar-item {
+      grid-column: 1/3;
+      max-width: 260px;
+      max-height: 150px;
+      img {
+        width: 100%;
+        object-fit: cover;
+        max-height: 130px;
       }
+    }
+    .item-cima {
+      grid-row: 4;
+    }
+    .item-baixo {
+      grid-row: 5;
     }
   }
 
@@ -388,8 +448,10 @@ footer {
   }
 
   .ultimos {
+    overflow: scroll;
+    flex-wrap: nowrap;
+    overflow: scroll;
     margin-bottom: 5rem;
-    justify-content: center;
     padding-left: 5rem;
     padding-right: 5rem;
   }
@@ -432,12 +494,30 @@ footer {
     margin-top: -6rem;
     gap: 4rem;
 
+    .conteudo-blog {
+      grid-column: 1/4;
+      h3 {
+        color: $laranja;
+        font-size: 2.5rem;
+        margin-top: -2rem;
+      }
+      p {
+        text-align: justify;
+        font-size: 1.4rem;
+      }
+    }
     .sidebar {
       display: flex;
       overflow: scroll;
       grid-row: 3;
       border-top: 1px solid $verde;
       border-left: none;
+      h5 {
+        font-size: 2rem;
+      }
     }
   }
+}
+.nav-depo {
+  display: none;
 }

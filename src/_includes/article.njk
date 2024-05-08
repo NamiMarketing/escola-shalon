@@ -2,6 +2,8 @@
 title: Blog
 layout: "base.njk"
 cssPath: "/css/blog-inicio.css"
+eleventyImport:
+collections: ["post"]
 ---
 
 {% from 'macros/header.njk' import header %}
@@ -50,27 +52,22 @@ cssPath: "/css/blog-inicio.css"
   {%- endfor %}
 </ul> -->
 
- <div class="artigos-relacionados rosa sidebar">
-    <h5>Outros Posts</h5>
-    {% set postsFiltered = collections.item | limit(2) %}
+  <div class="artigos-relacionados rosa sidebar">
+    <h5>Posts Relacionados</h5>
+    {% set postsFiltered = collections.all | filterByTags(tags) | reverse | excludeFromCollection(page.url) | limit(2)  %}
     <ul>
       {%- for post in postsFiltered -%}
       <li>
-        <img src="{{ post.data.thumbnail }}" alt="" />
-        <p>
-          {% for tag in post.data.tags -%} {% if tag !== 'post' %}
-          {{ tag }}, {% endif %} {%- endfor %}
-          {{ post.data.date | postDate }}
-        </p>
-        <a href="{{ post.url }}">
-          {{ post.data.title }}
+      <a href="{{ post.url }}"> <img src="{{ post.data.thumbnail }}" alt="" />
+        <div class="titulo-data">
+          <h4>{{ post.data.title }}</h4>
+          <p class="data">{{ post.data.date | postDate }}</p>
+          </div>
         </a>
       </li>
       {%- endfor %}
     </ul>
   </div>
-</section> 
-
-
+</section>
 
 {% include 'footer.njk' %}

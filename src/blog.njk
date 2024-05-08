@@ -11,55 +11,73 @@ collections: ["post"]
 {{ header(backLink = "/") }}
 
 <section class="novidade">
-  <div class="principal">
+  {% for post in collections.post | reverse | limit (7) %}
+    {% if loop.index == 1 %}
+    <div class="principal">
+    <a href="{{ post.url }}">
     <div class="foto-categoria">
-      <img
-        src="../img/Blog/kids-with-tablet-couch 1.svg"
-        alt="crianças com tablet"
-      />
-      <span class="categoria-main">CATEGORIA BLOG</span>
+      <img src="{{ post.data.thumbnail }}" alt="" />
+      {% for tag in post.data.tags -%} {% if tag !== 'post' %}
+      <span class="categoria-main">
+        {{ tag }}
+      </span>  
+      {% endif %} {%- endfor %}
+    </div>
+  </a> 
     </div>
     <div class="titulo-data">
-      <h3>Título da matéria</h3>
-      <p class="data">00/00/00</p>
-    </div>
-  </div>
-  <div class="sidebar">
-    <div>
+      <h3>{{ post.data.title }}</h3>
+      <p class="data">{{ post.data.date | postDate }}</p>
+      </div>
+      <p class="post-principal">
+        {{ post.data.description | safe }}</p>
+  
+ 
+  
+    {% elif loop.index == 2 %}
+    <div class="sidebar-item item-cima">
+      <a href="{{ post.url }}">
       <div class="foto-categoria">
-        <img
-          src="../img/Blog/positive-cute-teenagers-sit-bench-look-camera-smile-cute-boys-girls-schoolchildren-outdoors 1.svg"
-          alt=""
-        />
-        <span class="categoria-side">CATEGORIA BLOG</span>
+        <img src="{{ post.data.thumbnail }}" alt="" />
+        {% for tag in post.data.tags -%} {% if tag !== 'post' %}
+      <span class="categoria-side">
+        {{ tag }}
+      </span>
+      {% endif %} {%- endfor %}
       </div>
       <div class="titulo-data">
-        <h4>Título da matéria</h4>
-        <p class="data">00/00/00</p>
+        <h4>{{ post.data.title }}</h4>
+        <p class="data">{{ post.data.date | postDate }}</p>
+        </div>
       </div>
-    </div>
-    <div>
+      </a>
+    
+      {% elif loop.index == 3 %}
+      <div class="sidebar-item item-baixo">
+      <a href="{{ post.url }}">
       <div class="foto-categoria">
-        <img
-          src="../img/Blog/siblings-playing-with-brain-teaser-toys 1.svg"
-          alt=""
-        />
-        <span class="categoria-side">CATEGORIA BLOG</span>
+        <img src="{{ post.data.thumbnail }}" alt="" />
+        {% for tag in post.data.tags -%} {% if tag !== 'post' %}
+      <span class="categoria-side">
+        {{ tag }}
+      </span>
+      {% endif %} {%- endfor %}
       </div>
       <div class="titulo-data">
-        <h4>Título da matéria</h4>
-        <p class="data">00/00/00</p>
+        <h4>{{ post.data.title }}</h4>
+        <p class="data">{{ post.data.date | postDate }}</p>
+        </div>
       </div>
-    </div>
-  </div>
+      </a>
+    
 </section>
 
 <div class="divisoria"></div>
 
 <h1 class="rosa">Últimos Posts</h1>
-
+  
 <section class="ultimos">
-  {%- for post in collections.post | reverse | limit (4) %}
+{% else %}
   <a href="{{ post.url }}">
     <div class="ultimos-item flex">
       <img src="{{ post.data.thumbnail }}" alt="" />
@@ -68,7 +86,7 @@ collections: ["post"]
       <span class="categoria">
         {{ tag }}
       </span>
-      {% endif %} {%- endfor %}
+      {% endif %} {% endfor %}
 
       <p class="data">{{ post.data.date | postDate }}</p>
       <h4>{{ post.data.title }}</h4>
@@ -77,7 +95,7 @@ collections: ["post"]
       </p>
     </div>
   </a>
-  {%- endfor %}
+  {% endif %}{% endfor %}
 </section>
 
 <div class="nav-depo">
