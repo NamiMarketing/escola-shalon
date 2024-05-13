@@ -59,7 +59,7 @@ img {
   gap: 3rem;
 
   .titulo-data {
-    margin-top: -2rem;
+    margin-top: -3rem;
   }
   .post-principal {
     grid-row: 4;
@@ -427,7 +427,7 @@ footer {
     grid-template-columns: repeat(2, 1fr);
     .titulo-data {
       grid-row: 2;
-      margin-top: -2rem;
+      margin-top: -3rem;
     }
     .post-principal {
       grid-row: 3;
