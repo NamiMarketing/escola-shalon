@@ -84,27 +84,39 @@ img {
   }
 
   .sidebar-item {
-    grid-column: 3/4;
+    display: flex;
+    flex-direction: column;
+
     max-width: 500px;
     max-height: 300px;
 
     img {
-      width: 100%;
+      max-width: 100%;
       object-fit: cover;
-      max-height: 270px;
+    }
+
+    .foto-categoria {
+      max-height: 300px;
+      max-width: 100%;
+    }
+    .titulo-data {
+      margin-top: 0;
     }
   }
-  .item-cima {
-    grid-row: 1/2;
-  }
-  .item-baixo {
-    grid-row: 2/3;
-  }
 }
+
+.item-cima {
+  grid-row: 1/2;
+}
+.item-baixo {
+  grid-row: 2/3;
+}
+
 h4 {
   color: $laranja;
   font-size: 1.5rem;
 }
+
 .titulo-data {
   grid-column: 1/3;
   display: flex;
