@@ -468,10 +468,13 @@ nav {
     gap: 0;
     position: relative;
     height: 5.6rem;
+    >a{
+      height: 5.6rem;
+    }
     img{
       position: absolute;
-      left: 1rem;
-      width: 12rem;
+      left: 1rem !important;
+      width: 12rem !important;
     }
     .menu-icon{
       position: absolute;      
