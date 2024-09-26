@@ -1,83 +1,95 @@
 ---
-title: Escola Shalon
+title: Escola Batista Shalon
 layout: "base.njk"
 cssPath: "/css/blog-inicio.css"
 eleventyImport:
 collections: ["post"]
 ---
 
-{% from 'macros/header.njk' import header %}
 
-{{ header(backLink = "/") }}
+<nav data-scroll-section>
+  <a href="/"><img src="../img/shalon-logo.svg" alt=""></a>
+  <input class="menu-btn" type="checkbox" id="menu-btn" />
+  <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+  <ul class="menu">
+    <li><a href="/">INÍCIO</a></li>
+
+    <li><a href="/contato">CONTATO</a></li>
+
+    <label class="menu-icon-inside mobile-only" for="menu-btn">
+      <span class="navicon"></span
+    ></label>
+  </ul>
+</nav>
 
 <section class="novidade">
-  {% for post in collections.post | reverse | limit (7) %} {% if loop.index == 1
-  %}
-  <div class="principal">
+  {% for post in collections.post | reverse | limit (7) %}
+    {% if loop.index == 1 %}
+    <div class="principal">
     <a href="{{ post.url }}">
-      <div class="foto-categoria">
-        <img src="{{ post.data.thumbnail }}" alt="" />
-        {% for tag in post.data.tags -%} {% if tag !== 'post' %}
-        <span class="categoria-main">
-          {{ tag }}
-        </span>
-        {% endif %} {%- endfor %}
-      </div>
-    </a>
-  </div>
-  <div class="titulo-data">
-    <h3>{{ post.data.title }}</h3>
-    <p class="data">{{ post.data.date | postDate }}</p>
-  </div>
-  <p class="post-principal">
-    {{ post.data.description | safe }}
-  </p>
-
-  {% elif loop.index == 2 %}
-
-  <div class="sidebar-item item-cima">
-    <a href="{{ post.url }}">
-      <div class="foto-categoria">
-        <img src="{{ post.data.thumbnail }}" alt="" />
-        {% for tag in post.data.tags -%} {% if tag !== 'post' %}
-        <span class="categoria-side">
-          {{ tag }}
-        </span>
-        {% endif %} {%- endfor %}
-      </div>
-    </a>
-    <div class="titulo-data">
-      <h4>{{ post.data.title }}</h4>
-      <p class="data">{{ post.data.date | postDate }}</p>
+    <div class="foto-categoria">
+      <img src="{{ post.data.thumbnail }}" alt="" />
+      {% for tag in post.data.tags -%} {% if tag !== 'post' %}
+      <span class="categoria-main">
+        {{ tag }}
+      </span>  
+      {% endif %} {%- endfor %}
     </div>
-  </div>
-
-  {% elif loop.index == 3 %}
-
-  <div class="sidebar-item item-baixo">
-    <a href="{{ post.url }}">
+  </a> 
+    </div>
+    <div class="titulo-data">
+      <h3>{{ post.data.title }}</h3>
+      <p class="data">{{ post.data.date | postDate }}</p>
+      </div>
+      <p class="post-principal">
+        {{ post.data.description | safe }}</p>
+  
+ 
+  
+    {% elif loop.index == 2 %}
+    <div class="sidebar-item item-cima">
+      <a href="{{ post.url }}">
       <div class="foto-categoria">
         <img src="{{ post.data.thumbnail }}" alt="" />
         {% for tag in post.data.tags -%} {% if tag !== 'post' %}
-        <span class="categoria-side">
-          {{ tag }}
-        </span>
-        {% endif %} {%- endfor %}
+      <span class="categoria-side">
+        {{ tag }}
+      </span>
+      {% endif %} {%- endfor %}
       </div>
-    </a>
-    <div class="titulo-data">
-      <h4>{{ post.data.title }}</h4>
-      <p class="data">{{ post.data.date | postDate }}</p>
-    </div>
-  </div>
+      <div class="titulo-data">
+        <h4>{{ post.data.title }}</h4>
+        <p class="data">{{ post.data.date | postDate }}</p>
+        </div>
+      </div>
+      </a>
+    
+      {% elif loop.index == 3 %}
+      <div class="sidebar-item item-baixo">
+      <a href="{{ post.url }}">
+      <div class="foto-categoria">
+        <img src="{{ post.data.thumbnail }}" alt="" />
+        {% for tag in post.data.tags -%} {% if tag !== 'post' %}
+      <span class="categoria-side">
+        {{ tag }}
+      </span>
+      {% endif %} {%- endfor %}
+      </div>
+      <div class="titulo-data">
+        <h4>{{ post.data.title }}</h4>
+        <p class="data">{{ post.data.date | postDate }}</p>
+        </div>
+      </div>
+      </a>
+    
 </section>
 
 <div class="divisoria"></div>
 
 <h1 class="rosa">Últimos Posts</h1>
-
+  
 <section class="ultimos">
-  {% else %}
+{% else %}
   <a href="{{ post.url }}">
     <div class="ultimos-item flex">
       <img src="{{ post.data.thumbnail }}" alt="" />
@@ -107,4 +119,5 @@ collections: ["post"]
   </div>
 </div>
 
-{% include 'footer.njk' %}
+  {% include 'footer.njk' %}
+

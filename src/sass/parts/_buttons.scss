@@ -1,27 +1,7 @@
 @import "./colors";
 
-.laranjaButton {
-  background-color: $laranja;
-  padding: 1.3rem 1.3rem;
-  border: none;
-  font-size: 1.8rem;
-  color: $white;
-  font-weight: 500;
-  transition: filter 0.2s;
-  border-radius: 5rem;
-  text-transform: uppercase;
-  display: flex;
-  place-items: center;
-  justify-content: center;
-  z-index: 999;
-
-  &:hover {
-    filter: brightness(0.8);
-  }
-}
-
 .greenButton {
-  background-color: $verde;
+  background-color: $musgo-600;
   padding: 1.3rem 1.3rem;
   border: none;
   font-size: 1.8rem;
@@ -34,6 +14,7 @@
   place-items: center;
   justify-content: center;
   z-index: 999;
+  width: 24rem;
 
   &:hover {
     filter: brightness(0.8);
@@ -41,7 +22,7 @@
 }
 
 .darkGreenButton {
-  background-color: $verde-escuro;
+  background-color: $verde-600;
   padding: 1.3rem 1.3rem;
   border: none;
   font-size: 1.8rem;
@@ -54,8 +35,26 @@
   place-items: center;
   justify-content: center;
   z-index: 999;
+  width: 24rem;
 
   &:hover {
     filter: brightness(0.8);
+  }
+}
+
+@media screen and (max-width:700px){
+  .greenButton {
+    padding: 0.8rem 1.3rem;
+    font-size: 1.4rem;
+    border-radius: 2rem;
+    width: 15rem;
+  }
+  
+  .darkGreenButton {
+    padding: 0.8rem 1.3rem;
+    font-size: 1.4rem;
+    border-radius: 2rem;
+    width: 15rem;
+
   }
 }
