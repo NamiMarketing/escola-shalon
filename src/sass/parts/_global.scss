@@ -70,6 +70,9 @@ button {
   .mobile-only {
     display: block;
   }
+  .tablet-desktop{
+    display: none;
+  }
 }
 @media (min-width: 1271px){
   .mobile-tablet{
