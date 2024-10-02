@@ -66,12 +66,12 @@ button {
   display: none;
 }
 
-@media (orientation: portrait) and (max-width: 700px) {
+@media (max-width: 700px) {
   .mobile-only {
     display: block;
   }
   .tablet-desktop{
-    display: none;
+    display: none !important;
   }
 }
 @media (min-width: 1271px){
