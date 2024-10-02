@@ -1,36 +1,39 @@
 ---
 title: Blog
 layout: "base.njk"
-cssPath: "/css/blog-inicio.css"
+cssPath: "/css/blog.css"
 eleventyImport:
 collections: ["post"]
 ---
 
-{% from 'macros/header.njk' import header %}
+<nav class="nav2" data-scroll-section>
+  <a href="/">
+    <img src="../../img/shalon-logo.svg" alt="logo escola batista shalon">
+  </a>
+  <input class="menu-btn" type="checkbox" id="menu-btn" />
+  <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+  <ul class="menu">
+    <li><a href="/">INÍCIO</a></li>
 
-{{ header(backLink = "/blog") }}
+    <li><a href="">CONTATO</a></li>
 
-<section class="main-blog">
-  <div class="head-blog">
-    <div class="foto-blog">
+    <label class="menu-icon-inside mobile-only" for="menu-btn">
+      <span class="navicon"></span
+    ></label>
+  </ul>
+</nav>
+<section class="blog-post">
+    <div class="blog-header">
       {% if thumbnail %}
-      <div class="foto-categoria">
         <img src="{{ thumbnail }}" alt="" />
-        {% endif %} {% for tag in tags -%} {% if tag !== 'post' %}
-        <span class="categoria-main">{{ tag }}</span>
-      </div>
-      {% endif %} {%- endfor %}
+        {% endif %} 
+    </div>
+    <div class="conteudo-blog">
+      <a class="darkGreenButton" href="/blog">VOLTAR</a>
       <p class="data">{{ date | postDate }}</p>
-    </div>
-  </div>
-
-  <div class="conteudo-blog">
-    <div class="titulo-blog">
-      <h3>{{ title }}</h3>
-    </div>
-    <div class="content-container">
-      <p>{{ texto | safe }}</p>
-    </div>
+      <div class="content-container">
+        {{ content | safe }}
+      </div>
   </div>
 
   <!-- {%- for item in pagination.items | reverse -%}
@@ -51,7 +54,7 @@ collections: ["post"]
   </li>
   {%- endfor %}
 </ul> -->
-
+<!-- 
   <div class="artigos-relacionados rosa sidebar">
     <h5>Posts Relacionados</h5>
     {% set postsFiltered = collections.all | filterByTags(tags) | reverse | excludeFromCollection(page.url) | limit(2)  %}
@@ -67,7 +70,7 @@ collections: ["post"]
       </li>
       {%- endfor %}
     </ul>
-  </div>
+  </div> -->
 </section>
 
 {% include 'footer.njk' %}

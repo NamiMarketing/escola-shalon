@@ -29,22 +29,20 @@ collections: ["post"]
   <h1>Blog</h1>
 </header>
 
-<section class="novidade">
+<section class="main">
   {% for post in collections.post | reverse | limit (4) %}
-    <div class="principal">
-    <a href="{{ post.url }}">
-    <div class="foto-categoria">
-      <img src="{{ post.data.thumbnail }}" alt="" />
-      <span class="categoria-main">
-        {{ tag }}
-      </span>  
-    </div>
-  </a> 
-    </div>
-    <div class="titulo-data">
-      <h3>{{ post.data.title }}</h3>
-      <p class="data">{{ post.data.date | postDate }}</p>
+    <div class="blog-item">
+      <a href="{{ post.url }}">
+        <img src="{{ post.data.thumbnail }}" alt="" />
+        <div class="titulo-data">
+          <span class="categoria-main">
+            {{ tag }}
+          </span>  
+          <p class="data">{{ post.data.date | postDate('pt-BR') }}</p>
+          <h3>{{ post.data.title }}</h3>
+        </a> 
       </div>
+    </div>
       {%- endfor %}
     
 </section>

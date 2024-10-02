@@ -154,7 +154,20 @@
     top: 0;
   }
 
- 
+  @media (min-width: 701px) {
+    li {
+      float: left;
+    }
+
+    .menu {
+      clear: none;
+      float: right;
+      max-height: none;
+    }
+    .menu-icon {
+      display: none;
+    }
+  }
   @media (max-width: 700px) {
     margin: 0;
     display: flex;
@@ -229,7 +242,170 @@ header{
     transform: translateX(-50%);
   }
 }
+.main{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4.6rem;
+  width: 90%;
+  justify-content: center;
+  margin: 15rem auto;
 
+  .blog-item{
+    display: flex;
+    flex-direction: column;
+    height: 60rem;
+ 
+    img{
+      width: 56rem;
+      height: 36rem;
+      border-radius: 10px;
+    }
+    .titulo-data{
+      .data{
+        font-size: 2rem;
+        color: $cinza;
+        font-weight: 400;
+        text-transform: uppercase;
+      }
+      h3{
+        font-size: 4rem;
+        line-height: 4rem;
+        width: 50rem;
+      }
+    }
+  }
+  .blog-item:nth-child(even){
+    justify-content: flex-end;
+  }
+  .blog-item:nth-child(1){
+    h3{
+      color: $laranja-600;
+    }  
+  }
+  .blog-item:nth-child(2){
+    h3{
+      color: $verde-600;
+    }  
+  }
+  .blog-item:nth-child(3){
+    h3{
+      color: $musgo-400;
+    }  
+  }
+  .blog-item:nth-child(4){
+    h3{
+      color: $rosa;
+    }  
+  }
+
+}
+.blog-post{
+  .blog-header{
+    width: 100vw;
+    max-height: 80rem;
+    margin-bottom: 5rem;
+    img{
+      object-fit: cover;
+      width: 100%;
+      max-height: 80rem;
+    }
+  }
+  .data{
+    font-size: 2rem;
+    line-height: 2.8rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 0.15rem;
+    width: 85vw;
+    margin: 3rem auto 0;
+  }
+  .conteudo-blog{
+    width: 85vw;
+    margin: 3rem auto;
+    h3{
+      font-size: 5rem;
+      font-weight: 600;
+    }
+    .blog-conheca{
+      display: flex;
+      flex-direction: column;
+      gap: 4rem;
+      h4{
+        font-size: 3rem;
+        line-height: 2.6rem;
+        font-weight: 600;
+      }
+      p{
+        font-size: 2rem;
+        line-height: 2.6rem;
+        font-weight: 400;
+        color: $cinza;
+      }
+    }
+    .blog-cada{
+      display: flex;
+      flex-direction: column;
+      gap: 4rem;
+      p{
+        font-size: 2rem;
+        line-height: 2.6rem;
+        font-weight: 400;
+        color: $cinza;
+      }
+      .wrap-itens{
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+        p{
+          text-decoration: underline;
+        }
+      }
+    }
+    .blog-educacao{
+      display: flex;
+      flex-direction: column;
+      gap: 4rem;
+      h4{
+        font-size: 3rem;
+        line-height: 2.6rem;
+        font-weight: 600;
+      }
+      p{
+        font-size: 2rem;
+        line-height: 2.6rem;
+        font-weight: 400;
+        color: $cinza;
+      }
+      .wrap-title{
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+      }
+    }
+    .blog-principios{
+      display: flex;
+      flex-direction: column;
+      gap: 4rem;
+      h4{
+        font-size: 3rem;
+        line-height: 2.6rem;
+        font-weight: 600;
+      }
+      p{
+        font-size: 2rem;
+        line-height: 2.6rem;
+        font-weight: 400;
+        color: $cinza;
+      }
+      .wrap-title{
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+      }
+    }
+
+  }
+}
 footer {
   background-color: $musgo-200;
   display: flex;
@@ -310,8 +486,175 @@ footer {
 }
 
 
+
 @media screen and (max-width:700px){
-   footer {
+  header{
+    position: relative;
+    img{
+      width: 100vw;
+    }
+    h1{
+      position: absolute;
+      font-size: 5.6rem;
+      color: $white;
+      z-index: 3;
+      top: 40%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  .main{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 4rem;
+    width: 90%;
+    justify-content: center;
+    margin: 5rem auto;
+  
+    .blog-item{
+      display: flex;
+      flex-direction: column;
+      height: auto;
+   
+      img{
+        width: 100%;
+        height: auto;
+      }
+      .titulo-data{
+        .data{
+          font-size: 1.4rem;
+          margin-top: 1rem;
+        }
+        h3{
+          font-size: 2.2rem;
+          line-height: 2.2rem;
+          width: 37rem;
+          margin-top: 1rem;
+        }
+      }
+    }
+    .blog-item:nth-child(even){
+      justify-content: flex-end;
+    }
+    .blog-item:nth-child(1){
+      h3{
+        color: $laranja-600;
+      }  
+    }
+    .blog-item:nth-child(2){
+      h3{
+        color: $verde-600;
+      }  
+    }
+    .blog-item:nth-child(3){
+      h3{
+        color: $musgo-400;
+      }  
+    }
+    .blog-item:nth-child(4){
+      h3{
+        color: $rosa;
+      }  
+    }
+  
+  }
+  .blog-post{
+    .blog-header{
+      width: 100vw;
+      max-height: 80rem;
+      margin-bottom: 3rem;
+      img{
+        object-fit: cover;
+        width: 100%;
+        max-height: 80rem;
+      }
+    }
+    .data{
+      font-size: 1.6rem;
+      line-height: 2rem;
+    }
+    .conteudo-blog{
+      width: 85vw;
+      margin: 3rem auto;
+      h3{
+        margin-top: 2rem;
+        font-size: 4rem;
+        line-height: 4rem;
+        font-weight: 600;
+      }
+      .blog-conheca{
+        gap: 2rem;
+        h4{
+          font-size: 2.2rem;
+          line-height: 2.2rem;
+        }
+        p{
+          font-size: 1.8rem;
+          line-height: 2rem;
+        }
+      }
+      .blog-cada{
+        gap: 2rem;
+        p{
+          font-size: 1.8rem;
+          line-height: 2rem;
+        }
+        .wrap-itens{
+          display: flex;
+          align-items: center;
+          gap: 2rem;
+          img{
+            width: 2.5rem;
+          }
+          p{
+            text-decoration: underline;
+          }
+        }
+      }
+      .blog-educacao{
+        gap: 2rem;
+        h4{
+          font-size: 2.2rem;
+          line-height: 2.2rem;
+        }
+        p{
+          font-size: 1.8rem;
+          line-height: 2rem;
+        }
+        .wrap-title{
+          gap: 2rem;
+          img{
+            width: 4rem;
+          }
+        }
+      }
+      .blog-principios{
+        gap: 2rem;
+        h4{
+          font-size: 2.2rem;
+          line-height: 2.2rem;
+        }
+        p{
+          font-size: 1.8rem;
+          line-height: 2rem;
+          font-weight: 400;
+          color: $cinza;
+        }
+        .wrap-title{
+          display: flex;
+          align-items: center;
+          gap: 2rem;
+          img{
+            width: 6rem;
+          }
+        }
+      }
+  
+    }
+  }
+
+  footer {
     padding-top: 1rem;
     .img{
       width: 50vw;

@@ -5,8 +5,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./src/img");
   eleventyConfig.addPassthroughCopy("./src/admin");
 
-  eleventyConfig.addFilter("postDate", (dateObj) => {
-    return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_SHORT);
+  eleventyConfig.addFilter("postDate", (dateObj, locale= 'pt-BR') => {
+    return DateTime.fromJSDate(dateObj).setLocale(locale).toFormat('MMMM yyyy');
   });
   
   eleventyConfig.addNunjucksFilter("excludeFromCollection", function (collection=[], pageUrl=this.ctx.page.url) {
@@ -24,7 +24,6 @@ module.exports = function (eleventyConfig) {
   );
 
   eleventyConfig.addNunjucksFilter("limit", (arr, limit) => {
-    // console.log(arr)
     return arr?.slice(0, limit);
   });
 
