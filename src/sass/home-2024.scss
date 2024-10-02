@@ -138,7 +138,7 @@ nav {
 
     .menu-icon-inside .navicon:before,
     .menu-icon-inside .navicon:after {
-      background: $laranja;
+      background: $laranja-600;
       content: "";
       display: block;
       height: 55%;
@@ -181,7 +181,7 @@ nav {
     width: 1.8rem;
   }
   .menu-icon .navicon:before{
-    background: $laranja;
+    background: $laranja-600;
     content: "";
     display: block;
     height: 100%;
@@ -224,7 +224,90 @@ nav {
     top: 0;
   }
 
-  @media (min-width: 701px) {
+  @media (min-width: 701px) and (max-width:1270px) {
+    margin: 0;
+    display: flex;
+    padding: 2rem 0;
+    gap: 0;
+    position: relative;
+    height: 8rem;
+    img{
+      position: absolute;
+      left: 2rem;
+      width: 20rem;
+    }
+    .menu-icon{
+      position: absolute;      
+      right: 4rem;
+    }
+    .menu {
+      position: absolute;
+      top: 0;
+      right: 0;
+      background: $musgo-400;
+      padding-right: unset;
+      border-radius: 0 0 20px 20px;
+      width: 100vw;
+      display: flex;
+      flex-direction: column;
+      height: auto;
+      gap: 2rem;
+      margin-top: 0;
+
+      li {
+
+        &:first-of-type {
+          padding-top: 3rem;
+        }
+
+        &:last-of-type {
+
+          a {
+            border-bottom: unset;
+          }
+        }
+
+        a {
+          font-size: 1.8rem;
+          line-height: 100%;
+          color: $white;
+          text-align: center;
+        }
+      }
+    }
+    .menu-icon .navicon {
+      background: $verde-600;
+      display: block;
+      height: 3.3px;
+      margin-top: -1rem;
+
+      position: relative;
+      transition: background 0.2s ease-out;
+      width: 3rem;
+    }
+    .menu-icon .navicon:before{
+      background: $laranja-600;
+      content: "";
+      display: block;
+      margin-top: 1.2rem;
+
+      height: 100%;
+      position: absolute;
+      transition: all 0.2s ease-out;
+      width: 70%;
+    }
+    .menu-icon .navicon:after {
+      background: $verde-600;
+      content: "";
+      margin-top: 1.3rem;
+      display: block;
+      height: 100%;
+      position: absolute;
+      transition: all 0.2s ease-out;
+      width: 100%;
+    }
+  }
+  @media (min-width: 1271px) {
     li {
       float: left;
     }
@@ -359,7 +442,7 @@ nav {
 
     .menu-icon-inside .navicon:before,
     .menu-icon-inside .navicon:after {
-      background: $laranja;
+      background: $laranja-600;
       content: "";
       display: block;
       height: 55%;
@@ -402,7 +485,7 @@ nav {
     width: 1.8rem;
   }
   .menu-icon .navicon:before{
-    background: $laranja;
+    background: $laranja-600;
     content: "";
     display: block;
     height: 100%;
@@ -1679,6 +1762,390 @@ footer {
         font-size: 1.8rem;
         line-height: 2.4rem;
         margin-bottom: 2rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width:701px) and (max-width:1270px){
+  header{
+   
+    .texto-header{
+      top: 45%;
+      left: 5%;
+      h1{
+        font-size: 3.2rem;
+        line-height: 3.2rem;
+        width: 40rem;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+  .perfeita{
+    margin: 6rem auto;
+    gap: 3rem;
+    .perfeita-left{
+      gap: 3rem;
+      h2{
+        font-size: 4rem;
+        line-height: 4rem;
+        width: 31rem;
+      }
+      p{
+        font-size: 1.8rem;
+        line-height: 2rem;
+        font-weight: 400;
+      }
+    }
+    iframe{
+      max-height: 38rem;
+    }
+  }
+  .ensino{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    .infantil{
+      gap: 2rem;
+      img{
+        width: 100%;
+      }
+      .infantil-right{
+        padding-right: 2rem ;
+        flex: 1;
+        h3{
+          font-size: 2.8rem;
+          line-height: 2.8rem;
+        }
+        h4{
+          font-size: 2rem;
+          line-height: 3rem;
+          margin-bottom: 2rem;
+        }
+        p{
+          font-size: 1.6rem;
+          line-height: 2rem;
+          margin-bottom: 1.5rem;
+          width: 41rem;
+        }
+      }
+    }
+    .fundamental{
+      gap: 2rem;
+      img{
+        width: 100%;
+      }
+      .infantil-right{
+        padding-left: 2rem ;
+        flex: 1;
+        h3{
+          font-size: 2.8rem;
+          line-height: 2.8rem;
+        }
+        h4{
+          font-size: 2rem;
+          line-height: 3rem;
+          margin-bottom: 2rem;
+        }
+        p{
+          font-size: 1.6rem;
+          line-height: 2rem;
+          margin-bottom: 1.5rem;
+          width: 41rem;
+        }
+      }
+    }
+  }
+  .contraturno{
+    margin: 4rem 0;
+    h2{
+      font-size: 4rem;
+    }
+    > p{
+      font-size: 1.8rem;
+      line-height: 2rem;
+      margin-top: 1rem;
+    }
+    .wrap-contraturno{
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      padding: 0 2rem;
+      .contraturno-right{
+        flex: 1;
+        img{
+          width: 100%;
+        }
+      }
+      .contraturno-left{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        flex: 1;
+        .left-item{
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+          p{
+            width: 30rem;
+            font-size: 1.8rem;
+            line-height: 2.5rem;
+          }
+          img{
+            width: 4rem;
+          }
+        }
+      }
+    }
+  }
+  .educacao{
+    display: flex;
+    flex-direction: column;
+    width: 85vw;
+    margin: auto;
+    h2{
+      font-size: 4rem;
+      line-height: 4rem;
+    }
+    .wrap-educacao{
+      flex-wrap: wrap;
+      margin-top: 5rem;
+      margin-bottom: 5rem;
+      .educacao-item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 23rem;
+        span{
+          font-size: 4rem;
+          line-height: 4rem;
+          margin-bottom: 0.9rem;
+          font-family: $eloise;
+        }
+        p{
+          font-size: 1.8rem;
+          line-height: 2.4rem;
+          color: $cinza;
+        }
+        img{
+          width: 100%;
+        }
+      }
+    }
+  }
+  .metodologia{
+    margin-bottom: 7rem;
+    .metodologia-texto{
+      h4{
+        font-size: 1.8rem;
+        line-height: 2rem;
+      }
+      p{
+        font-size: 2.5rem;
+        line-height: 2.8rem;
+        margin-top: 2rem;
+        width: 45rem;
+      }
+    }
+  }
+  .abordagem{
+    padding-bottom: 7rem;
+    h2{
+      font-size: 4rem;
+      line-height: 4rem;
+      margin-top: 5rem;
+    }
+    p{
+      font-size: 2rem;
+      line-height: 2.5rem;
+      margin-top: 3.5rem;
+    }
+    .wrap-principios{
+      gap: 3rem;
+      margin-top: 5.5rem;
+      img{
+        width: 20rem;
+      }
+    }
+  }
+  .alem{
+    align-items: center;
+    padding-top: 9rem;
+    background: url(../img/alem-back-mobile.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    .alem-texto{
+      width: 100%;
+      background-color: $musgo-100;
+      h3{
+        font-size: 2rem;
+        line-height: 2rem;
+      }
+      h1{
+        font-size: 4rem;
+        line-height: 4rem;
+        margin-top: 1rem;
+      }
+      p{
+        font-size: 2rem;
+        margin: 3rem auto 0;
+        width: 90vw;
+      }
+    }
+    .alem-itens{
+      gap: 3rem;
+      padding-top: 5rem;
+      margin-top: 0;
+      width: 100%;
+      background-color: $musgo-100;
+      .item{
+        gap: 1.2rem;
+        width: 100%;
+        padding-left: 5rem;
+        img{
+          width: 5rem;
+        };
+        p{
+          font-size: 2rem;
+          line-height: 2rem;
+          width: 30rem;
+        }
+        &:nth-child(-n+4){
+          justify-content: flex-end;
+          padding-right: 1rem;
+        }
+      }
+    }
+    a{
+      margin-top: 2rem;
+      margin-bottom: 4rem;
+    }
+    .alem-left{
+      position: absolute;
+      left: 0;
+      top: 24%;
+      width: 41%;
+    }
+    .alem-right{
+      position: absolute;
+      right: 0;
+      top: 48%;
+      width: 60%;
+      img{
+        width: 100%
+      }
+    }
+  }
+  .emocional{
+    position: relative;
+    margin-bottom: 7rem;
+    img{
+      width: 100%;
+    };
+    h2{
+      font-size: 4.8rem;
+      color: white;
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      left: 0;
+      text-align: center;
+    }
+  }
+  .inclusao{
+    > p{
+      width: 85vw;
+      font-size: 2rem;
+      line-height: 2.5rem;
+      margin-bottom: 3rem;
+    }
+    .itens{
+      width: 50vw;
+      gap: 4rem;
+      transform: translateX(0%);
+      .item{
+        gap: 2rem;
+        p{
+          font-size: 4rem;
+          line-height: 4rem;
+        }
+        >img{
+          width: 3rem;
+        }
+      }
+    }
+  }
+  .nossos-parceiros {
+    margin-top: 8rem;
+    h2{
+      font-size: 4rem;
+      line-height: 4rem;
+      margin-bottom: 5rem;
+    }
+    .parceirosIcons{
+      width: 85%;
+      gap: 4rem;
+      flex-wrap: wrap;
+      margin: 0 auto 7rem;
+      justify-content: center;
+    }
+  }
+  .material{
+    gap: 7rem;
+    h1{
+      font-size: 4rem;
+      line-height: 4rem;
+    }
+    p{
+      font-size: 1.8rem ;
+    }
+    a{
+      margin-bottom: 10rem;
+    }
+  }
+  .pre-footer {
+    padding-top: 8rem;
+    align-items: center;
+    position: relative;
+    .textoPreFooter {
+      gap: 5rem;
+      margin-bottom: 10rem;
+      p {
+        font-size: 4rem;
+        line-height: 4rem;
+      }
+    }
+    > img{
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+    .jesus{
+      transform: translateY(-110%);
+      width: 30rem;
+      img{
+        width: 100%;
+      }
+    }
+    .pomba{
+      width: 25rem;
+      img{
+        width: 100%;
+      }
+    }
+  }
+  footer {
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    .top {
+      width: 85%;
+  
+      .right {
+        margin-right: 0rem;
       }
     }
   }

@@ -1,20 +1,22 @@
 ---
 title: Escola Batista Shalon
 layout: "base.njk"
-cssPath: "/css/blog-inicio.css"
+cssPath: "/css/blog.css"
 eleventyImport:
 collections: ["post"]
 ---
 
 
-<nav data-scroll-section>
-  <a href="/"><img src="../img/shalon-logo.svg" alt=""></a>
+<nav class="nav2" data-scroll-section>
+  <a href="/">
+    <img src="../img/shalon-logo.svg" alt="logo escola batista shalon">
+  </a>
   <input class="menu-btn" type="checkbox" id="menu-btn" />
   <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
   <ul class="menu">
     <li><a href="/">INÍCIO</a></li>
 
-    <li><a href="/contato">CONTATO</a></li>
+    <li><a href="">CONTATO</a></li>
 
     <label class="menu-icon-inside mobile-only" for="menu-btn">
       <span class="navicon"></span
@@ -22,18 +24,20 @@ collections: ["post"]
   </ul>
 </nav>
 
+<header>
+  <img src="../img/blog/blog-header.png" alt="">
+  <h1>Blog</h1>
+</header>
+
 <section class="novidade">
-  {% for post in collections.post | reverse | limit (7) %}
-    {% if loop.index == 1 %}
+  {% for post in collections.post | reverse | limit (4) %}
     <div class="principal">
     <a href="{{ post.url }}">
     <div class="foto-categoria">
       <img src="{{ post.data.thumbnail }}" alt="" />
-      {% for tag in post.data.tags -%} {% if tag !== 'post' %}
       <span class="categoria-main">
         {{ tag }}
       </span>  
-      {% endif %} {%- endfor %}
     </div>
   </a> 
     </div>
@@ -41,83 +45,10 @@ collections: ["post"]
       <h3>{{ post.data.title }}</h3>
       <p class="data">{{ post.data.date | postDate }}</p>
       </div>
-      <p class="post-principal">
-        {{ post.data.description | safe }}</p>
-  
- 
-  
-    {% elif loop.index == 2 %}
-    <div class="sidebar-item item-cima">
-      <a href="{{ post.url }}">
-      <div class="foto-categoria">
-        <img src="{{ post.data.thumbnail }}" alt="" />
-        {% for tag in post.data.tags -%} {% if tag !== 'post' %}
-      <span class="categoria-side">
-        {{ tag }}
-      </span>
-      {% endif %} {%- endfor %}
-      </div>
-      <div class="titulo-data">
-        <h4>{{ post.data.title }}</h4>
-        <p class="data">{{ post.data.date | postDate }}</p>
-        </div>
-      </div>
-      </a>
-    
-      {% elif loop.index == 3 %}
-      <div class="sidebar-item item-baixo">
-      <a href="{{ post.url }}">
-      <div class="foto-categoria">
-        <img src="{{ post.data.thumbnail }}" alt="" />
-        {% for tag in post.data.tags -%} {% if tag !== 'post' %}
-      <span class="categoria-side">
-        {{ tag }}
-      </span>
-      {% endif %} {%- endfor %}
-      </div>
-      <div class="titulo-data">
-        <h4>{{ post.data.title }}</h4>
-        <p class="data">{{ post.data.date | postDate }}</p>
-        </div>
-      </div>
-      </a>
+      {%- endfor %}
     
 </section>
 
-<div class="divisoria"></div>
-
-<h1 class="rosa">Últimos Posts</h1>
-  
-<section class="ultimos">
-{% else %}
-  <a href="{{ post.url }}">
-    <div class="ultimos-item flex">
-      <img src="{{ post.data.thumbnail }}" alt="" />
-
-      {% for tag in post.data.tags -%} {% if tag !== 'post' %}
-      <span class="categoria">
-        {{ tag }}
-      </span>
-      {% endif %} {% endfor %}
-
-      <p class="data">{{ post.data.date | postDate }}</p>
-      <h4>{{ post.data.title }}</h4>
-      <p class="resumo">
-        {{ post.data.description | safe }}
-      </p>
-    </div>
-  </a>
-  {% endif %}{% endfor %}
-</section>
-
-<div class="nav-depo">
-  <div class="serie-button-prev">
-    <img class="left" src="../img/left-arrow.svg" alt="botao" />
-  </div>
-  <div class="serie-button-next">
-    <img src="../img/right-arrow.svg" alt="" />
-  </div>
-</div>
 
   {% include 'footer.njk' %}
 

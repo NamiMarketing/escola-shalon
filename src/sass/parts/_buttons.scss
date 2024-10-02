@@ -6,6 +6,7 @@
   border: none;
   font-size: 1.8rem;
   color: $white;
+  line-height: 1.8rem;
   font-weight: 500;
   transition: filter 0.2s;
   border-radius: 5rem;
@@ -26,6 +27,7 @@
   padding: 1.3rem 1.3rem;
   border: none;
   font-size: 1.8rem;
+  line-height: 1.8rem;
   color: $white;
   font-weight: 500;
   transition: filter 0.2s;
@@ -46,6 +48,7 @@
   .greenButton {
     padding: 0.8rem 1.3rem;
     font-size: 1.4rem;
+    line-height: 1.4rem;
     border-radius: 2rem;
     width: 15rem;
   }
@@ -53,8 +56,26 @@
   .darkGreenButton {
     padding: 0.8rem 1.3rem;
     font-size: 1.4rem;
+    line-height: 1.4rem;
     border-radius: 2rem;
     width: 15rem;
 
+  }
+}
+@media screen and (min-width:701px) and (max-width:1270px){
+  .greenButton {
+    padding: 0.8rem 1.3rem;
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    border-radius: 2rem;
+    width: 19rem;
+  }
+  
+  .darkGreenButton {
+    padding: 0.8rem 1.3rem;
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    border-radius: 2rem;
+    width: 19rem;
   }
 }
