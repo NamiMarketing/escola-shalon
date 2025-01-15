@@ -14,9 +14,11 @@ collections: ["post"]
   <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
   <ul class="menu">
     <li><a href="/">INÍCIO</a></li>
-
-    <li><a href="">CONTATO</a></li>
-
+    <li><a href="/#ensino">ENSINO</a></li>
+    <li><a href="/#metodologia">METODOLOGIA</a></li>
+    <li><a href="/#parceiros">PARCEIROS</a></li>
+    <li><a href="/blog">BLOG</a></li>
+    <li><a href="/contato">CONTATO</a></li>
     <label class="menu-icon-inside mobile-only" for="menu-btn">
       <span class="navicon"></span
     ></label>
@@ -30,7 +32,6 @@ collections: ["post"]
     </div>
     <div class="conteudo-blog">
       <a class="darkGreenButton" href="/blog">VOLTAR</a>
-      <p class="data">{{ date | postDate }}</p>
       <div class="content-container">
         {{ content | safe }}
       </div>

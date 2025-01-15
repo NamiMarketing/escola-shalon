@@ -15,6 +15,9 @@ collections: ["post"]
   <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
   <ul class="menu">
     <li><a href="/">INÍCIO</a></li>
+    <li><a href="/#ensino">ENSINO</a></li>
+    <li><a href="/#metodologia">METODOLOGIA</a></li>
+    <li><a href="/#parceiros">PARCEIROS</a></li>
 
     <li><a href="/contato">CONTATO</a></li>
 
@@ -38,7 +41,6 @@ collections: ["post"]
           <span class="categoria-main">
             {{ tag }}
           </span>  
-          <p class="data">{{ post.data.date | postDate('pt-BR') }}</p>
           <h3>{{ post.data.title }}</h3>
         </a> 
       </div>

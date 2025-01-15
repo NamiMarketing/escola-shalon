@@ -301,9 +301,10 @@ header{
 }
 .blog-post{
   .blog-header{
-    width: 100vw;
-    max-height: 80rem;
-    margin-bottom: 5rem;
+    width: 60vw;
+    max-height: 60rem;
+    object-fit: cover;
+    margin: 0 auto 5rem;
     img{
       object-fit: cover;
       width: 100%;
