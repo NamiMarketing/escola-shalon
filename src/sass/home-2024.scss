@@ -1,6 +1,5 @@
-@import "./parts/global";
-@import "./parts/colors";
-@import "./parts/buttons";
+@use 'index' as *;
+
 
 .popup.my-popup .popup-content{
   
