@@ -1031,6 +1031,9 @@ header{
     align-items: center;
     gap: 5.5rem;
     margin-bottom: 10rem;
+    img{
+      max-width: 17rem;
+    }
   }
 }
 .material{
@@ -2095,6 +2098,9 @@ footer {
       flex-wrap: wrap;
       margin: 0 auto 7rem;
       justify-content: center;
+      img{
+        max-width: 14rem;
+      }
     }
   }
   .material{
