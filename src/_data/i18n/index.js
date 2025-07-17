@@ -311,31 +311,31 @@ module.exports = {
   images:{
     img1: {
       pt: '../img/soberania.png',
-      en: '../img/individualidade.png'
+      en: '../img/soberania-en.png'
     },
     img2: {
       pt: '../img/individualidade.png',
-      en: '../img/individualidade.png'
+      en: '../img/individualidade-en.png'
     },
     img3: {
       pt: '../img/autogoverno.png',
-      en: '../img/individualidade.png'
+      en: '../img/autogoverno-en.png'
     },
     img4: {
       pt: '../img/carater.png',
-      en: '../img/individualidade.png'
+      en: '../img/carater-en.png'
     },
     img5: {
       pt: '../img/mordomia.png',
-      en: '../img/individualidade.png'
+      en: '../img/mordomia-en.png'
     },
     img6: {
       pt: '../img/semeadura.png',
-      en: '../img/individualidade.png'
+      en: '../img/semeadura-en.png'
     },
     img7: {
       pt: '../img/alianca.png',
-      en: '../img/individualidade.png'
+      en: '../img/alianca-en.png'
     },
   }
 };
