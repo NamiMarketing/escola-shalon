@@ -30,17 +30,65 @@ module.exports = {
       pt: "A Escola perfeita para sua Família",
       en: "The Perfect School for Your Family",
     },
-    text1:{
-      pt: "Transformar famílias tem sido nosso propósito há 30 anos. Ao compartilhar o amor de Jesus Cristo, nossa equipe dedicada cria um ambiente de aprendizagem seguro, atencioso e positivo. Ofertamos educação acolhedora e de ponta, junto com nosso time de educadores e as famílias, temos construído a escola cristã, humana que sonhamos.",
-      en: "For over 30 years, transforming families has been our purpose. By sharing the love of Jesus Christ, our dedicated team creates a safe, caring, and uplifting learning environment. We offer high-quality, welcoming education. Together with our team of educators and the families we serve, we’ve been building the Christian, compassionate school we’ve always dreamed of.",
-    },
     title2: {
       pt: "Educação Infantil",
       en: "Early Childhood Education",
     },
-    subtitle1:{
-      pt:"Meio período ou com Contraturno",
-      en:"Half-day or Full-day with Extended Care",
+    title3: {
+      pt: "Ensino Fundamental I",
+      en: "Elementary School",
+    },
+    title4: {
+      pt: "Ensino Fundamental II",
+      en: "Middle School",
+    },
+    title5: {
+      pt: "Contraturno escolar",
+      en: "Extended Care Program",
+    },
+    title6: {
+      pt: "Educação Cristã de",
+      en: "32 Years of",
+    },
+    title7: {
+      pt: "Qualidade há 32 anos",
+      en: "Quality Christian Education",
+    },
+    title8: {
+      pt: "Abordagem por Princípios Bíblicos",
+      en: "Biblical Principles Approach",
+    },
+    title9:{
+      pt: "Nossos alunos poderão ir além",
+      en:"Our students are equipped to go further.",
+    },
+    title10:{
+      pt: "Educação Emocional",
+      en:"Emotional Education",
+    },
+    title11:{
+     pt: "Nossos parceiros",
+     en:"Our Partners",
+   },
+    title12:{
+     pt: "Material Didático",
+     en:"Teaching Materials",
+   },
+    title13:{
+      pt:'Venha conhecer a Escola Batista Shalon e os diferenciais de uma educação por princípios!',
+      en:'Come visit Shalon Baptist School and discover the difference of a Principle-Based education!'
+    },
+    title14:{
+      pt:'Educação Bilíngue:',
+      en:'Bilingual Education: A World of Opportunities'
+    },
+    title15:{
+      pt:'Um Mundo de Oportunidades',
+      en:'Bilingual Education: A World of Opportunities'
+    },
+    text1:{
+      pt: "Transformar famílias tem sido nosso propósito há 30 anos. Ao compartilhar o amor de Jesus Cristo, nossa equipe dedicada cria um ambiente de aprendizagem seguro, atencioso e positivo. Ofertamos educação acolhedora e de ponta, junto com nosso time de educadores e as famílias, temos construído a escola cristã, humana que sonhamos.",
+      en: "For over 30 years, transforming families has been our purpose. By sharing the love of Jesus Christ, our dedicated team creates a safe, caring, and uplifting learning environment. We offer high-quality, welcoming education. Together with our team of educators and the families we serve, we’ve been building the Christian, compassionate school we’ve always dreamed of.",
     },
     text2: {
       pt: "A Educação Infantil da EBS é um programa imerso em princípios cristãos e baseado na Bíblia, onde as crianças de 4 a 5 anos aprendem sobre a verdade de Deus. ",
@@ -50,10 +98,6 @@ module.exports = {
       pt: "Nosso objetivo é apoiar a criança socialmente, emocionalmente, espiritualmente, fisicamente e intelectualmente.",
       en:"Our goal is to support each child socially, emotionally, spiritually, physically, and intellectually.",
     },
-    title3: {
-      pt: "Ensino Fundamental I",
-      en: "Elementary School",
-    },
     text4:{
       pt:"Os alunos do ensino fundamental são desafiados a se tornarem cada vez mais independentes e preparados para os desafios da adolescência.",
       en:"Students in our elementary program are encouraged to grow in independence and to be prepared for the challenges of adolescence.",
@@ -62,25 +106,9 @@ module.exports = {
       pt:"Nosso foco, está em preparar cada aluno para atingir seu potencial máximo enquanto aprende a servir a Cristo em sua vida diária. ",
       en:"Our focus is on helping each student reach their full potential while learning to serve Christ in their daily lives."
     },
-    title4: {
-      pt: "Ensino Fundamental II",
-      en: "Middle School",
-    },
-    subtitle2: {
-      pt: "Meio período",
-      en:"Half-day Program"
-    },
     text6:{
       pt:"No Ensino Fundamental II começamos os preparativos para o Ensino Médio, onde terão novos desafios. Aqui eles são estimulados para começar a intensificar a rotina de estudos e explorar de maneira mais aprofundada os conteúdos. O encontro com Deus e a Palavra se mantém, com discussões e reflexões mais profundas, colocando os ensinamentos em prática no seu cotidiano.",
       en:"In Middle School, we begin preparing students for High School and the new challenges it brings. At this stage, students are encouraged to develop stronger study habits and engage more deeply with academic content. Their relationship with God and His Word continues to grow, with deeper discussions and reflections that help them apply biblical teachings in their daily lives."
-    },
-     title5: {
-      pt: "Contraturno escolar",
-      en: "Extended Care Program",
-    },
-     subtitle3: {
-      pt: "Educação Infantil ao 5º Ano",
-      en:"For Early Childhood through 5th Grade"
     },
     text7:{
       pt:"Almoço (serviço terceirizado)",
@@ -94,49 +122,21 @@ module.exports = {
       pt:"Apoio nas Tarefas Escolares",
       en:"Homework Support"
     },
-      title6: {
-      pt: "Educação Cristã de",
-      en: "32 Years of",
-    },
-      title7: {
-      pt: "Qualidade há 32 anos",
-      en: "Quality Christian Education",
-    },
-    subtitle5: {
-      pt: "A ESCOLA",
-      en:"THE SCHOOL"
-    },
     text10:{
       pt:"Melhor educação cristã em Curitiba. Uma extensão das famílias.",
       en:"The best Christian education in Curitiba. An extension of the family."
-    },
-    subtitle6: {
-      pt: "AS FAMILIAS",
-      en:"FAMILIES"
     },
     text11:{
       pt:"Escola comprometida com o indivíduo por completo e não apenas no ensino.",
       en:"A school committed to the whole person — not just academics."
     },
-    subtitle7: {
-      pt: "O METODO",
-      en:"OUR METHOD"
-    },
     text12:{
       pt:"Abordagem por Princípios Bíblicos com material cristão.",
       en:"A Bible-based approach using Christian curriculum."
     },
-    subtitle8: {
-      pt: "O ENSINO",
-      en:"TEACHING"
-    },
     text13:{
       pt:"Uma combinação teórica e prática do conhecimento secular com as verdades da Palavra de Deus.",
       en:"A balance of theoretical and practical learning, combining academic knowledge with the truth of God’s Word."
-    },
-    subtitle9: {
-      pt: "Metodologia Pedagógica",
-      en:"Pedagogical Approach"
     },
     text14:{
       pt:"Entendemos educação como ferramenta para gerar conhecimento e valores para a construção de cidadãos transformadores.",
@@ -149,6 +149,66 @@ module.exports = {
     text16:{
       pt:'Aqui nossos alunos são incentivados a:',
       en:'Here, our students are encouraged to:'
+    },
+    text17:{
+      pt:'Os 7 Princípios de Governo são pilares importantes dentro do método AEP, pois trazem em si a reflexão bíblica dentro de uma cosmovisão cristã. Conheça os princípios:',
+      en:'The 7 Principles of Government are key pillars of the Principle Approach® method, as they bring biblical reflection within a Christian worldview. Get to know the principles:'
+    },
+    text18:{
+      pt:'Acreditamos que a educação vai muito além das disciplinas tradicionais. Buscamos proporcionar uma formação completa, preparando nossos alunos para os desafios do futuro com uma abordagem que une conhecimento acadêmico, desenvolvimento pessoal e capacitação prática.',
+      en:'We believe education goes far beyond traditional subjects. We strive to provide a well-rounded formation, preparing our students for future challenges through an approach that combines academic knowledge, personal development, and practical skills.'
+    },
+    text19:{
+      pt:'Acreditamos que a educação vai além do currículo acadêmico. Nós sabemos que as emoções são muito importantes na vida e desenvolvimento dos nossos alunos. Por isso, realizamos um trabalho de Educação Emocional, visando promover um ambiente inclusivo, empático e saudável.',
+      en:'We believe that education goes beyond the academic curriculum. We understand that emotions play a vital role in the life and development of our students. That’s why we implement an Emotional Education program designed to foster an inclusive, empathetic, and healthy environment.'
+    },
+    text20:{
+      pt:'Com a nossa equipe psicológica e pedagógica, desenvolvemos projetos nas áreas de:',
+      en:'With the support of our psychological and educational teams, we develop projects in the following areas:'
+    },
+    text21:{
+      pt:'Aqui na EBS utilizamos o material da <strong>Divinamente Inspirado Editora</strong> para a <strong>Educação Infantil</strong>, uma coleção criativa, lúdica e atual, com personagens que caracterizam situações e vivências do cotidiano das crianças, conectando-as aos conhecimentos que compõem o patrimônio cultural (alinhados à BNCC) e promovem o desenvolvimento de habilidades sociais, individuais e cognitivas necessárias para cada faixa etária.<br/><br/>No <strong>Ensino Fundamental</strong>, trabalhamos com o <strong>Sistema Mackenzie de Ensino</strong> que tem um modelo pedagógico alinhado com a cosmo-visão cristã e o entendimento de que todo conhecimento provém de Deus e é o ponto convergente de todo raciocínio.',
+      en:'At EBS, we use materials from <strong>Divinamente Inspirado Publishing</strong> for <strong>Early Childhood Education</strong> — a creative, playful, and up-to-date collection featuring characters that depict everyday situations and experiences of children. These materials connect students to the cultural heritage knowledge (aligned with the Brazilian National Common Curricular Base - BNCC) and promote the development of social, individual, and cognitive skills appropriate for each age group. <br/><br/> For <strong>Elementary School</strong>, we work with the <strong>Mackenzie Teaching System</strong>, which follows a pedagogical model aligned with a Christian worldview and the understanding that all knowledge comes from God, serving as the converging point of all reasoning.'
+    },
+    text22:{
+      pt:'Acreditamos que a fluência em um segundo idioma abre portas para um futuro promissor. Preparamos seus filhos para serem cidadãos globais, capazes de se comunicar, pensar e aprender em dois idiomas, expandindo seus horizontes acadêmicos e profissionais.',
+      en:'We believe that fluency in a second language opens doors to a promising future. We prepare your children to become global citizens, capable of communicating, thinking, and learning in two languages — expanding their academic and professional horizons.'
+    },
+    subtitle1:{
+      pt:"Meio período ou com Contraturno",
+      en:"Half-day or Full-day with Extended Care",
+    },
+    subtitle2: {
+      pt: "Meio período",
+      en:"Half-day Program"
+    },
+     subtitle3: {
+      pt: "Educação Infantil ao 5º Ano",
+      en:"For Early Childhood through 5th Grade"
+    },
+    subtitle5: {
+      pt: "A ESCOLA",
+      en:"THE SCHOOL"
+    },
+    subtitle6: {
+      pt: "AS FAMILIAS",
+      en:"FAMILIES"
+    },
+    subtitle7: {
+      pt: "O METODO",
+      en:"OUR METHOD"
+    },
+    subtitle8: {
+      pt: "O ENSINO",
+      en:"TEACHING"
+    },
+    subtitle9: {
+      pt: "Metodologia Pedagógica",
+      en:"Pedagogical Approach"
+    },
+    subtitle10: {
+      pt: "Uma educação para além da sala de aula",
+      en: "Education Beyond the Classroom",
     },
     item1:{
       pt:'PESQUISAR',
@@ -165,26 +225,6 @@ module.exports = {
     item4:{
       pt:'REGISTRAR',
       en:'RECORD'
-    },
-    title8: {
-      pt: "Abordagem por Princípios Bíblicos",
-      en: "Biblical Principles Approach",
-    },
-     text17:{
-      pt:'Os 7 Princípios de Governo são pilares importantes dentro do método AEP, pois trazem em si a reflexão bíblica dentro de uma cosmovisão cristã. Conheça os princípios:',
-      en:'The 7 Principles of Government are key pillars of the Principle Approach® method, as they bring biblical reflection within a Christian worldview. Get to know the principles:'
-    },
-    subtitle10: {
-      pt: "Uma educação para além da sala de aula",
-      en: "Education Beyond the Classroom",
-    },
-    title9:{
-      pt: "Nossos alunos poderão ir além",
-      en:"Our students are equipped to go further.",
-    },
-    text18:{
-      pt:'Acreditamos que a educação vai muito além das disciplinas tradicionais. Buscamos proporcionar uma formação completa, preparando nossos alunos para os desafios do futuro com uma abordagem que une conhecimento acadêmico, desenvolvimento pessoal e capacitação prática.',
-      en:'We believe education goes far beyond traditional subjects. We strive to provide a well-rounded formation, preparing our students for future challenges through an approach that combines academic knowledge, personal development, and practical skills.'
     },
     item5:{
       pt:'Educação financeira e empreendedorismo',
@@ -222,18 +262,6 @@ module.exports = {
       pt:'Arte',
       en:'Art'
     },
-    title10:{
-      pt: "Educação Emocional",
-      en:"Emotional Education",
-    },
-    text19:{
-      pt:'Acreditamos que a educação vai além do currículo acadêmico. Nós sabemos que as emoções são muito importantes na vida e desenvolvimento dos nossos alunos. Por isso, realizamos um trabalho de Educação Emocional, visando promover um ambiente inclusivo, empático e saudável.',
-      en:'We believe that education goes beyond the academic curriculum. We understand that emotions play a vital role in the life and development of our students. That’s why we implement an Emotional Education program designed to foster an inclusive, empathetic, and healthy environment.'
-    },
-    text20:{
-      pt:'Com a nossa equipe psicológica e pedagógica, desenvolvemos projetos nas áreas de:',
-      en:'With the support of our psychological and educational teams, we develop projects in the following areas:'
-    },
      item14:{
       pt:'INCLUSÃO',
       en:'INCLUSION'
@@ -249,22 +277,6 @@ module.exports = {
      item17:{
       pt:'AUTOESTIMA',
       en:'SELF-ESTEEM'
-    },
-     title11:{
-      pt: "Nossos parceiros",
-      en:"Our Partners",
-    },
-     title12:{
-      pt: "Material Didático",
-      en:"Teaching Materials",
-    },
-    text21:{
-      pt:'Aqui na EBS utilizamos o material da <strong>Divinamente Inspirado Editora</strong> para a <strong>Educação Infantil</strong>, uma coleção criativa, lúdica e atual, com personagens que caracterizam situações e vivências do cotidiano das crianças, conectando-as aos conhecimentos que compõem o patrimônio cultural (alinhados à BNCC) e promovem o desenvolvimento de habilidades sociais, individuais e cognitivas necessárias para cada faixa etária.<br/><br/>No <strong>Ensino Fundamental</strong>, trabalhamos com o <strong>Sistema Mackenzie de Ensino</strong> que tem um modelo pedagógico alinhado com a cosmo-visão cristã e o entendimento de que todo conhecimento provém de Deus e é o ponto convergente de todo raciocínio.',
-      en:'At EBS, we use materials from <strong>Divinamente Inspirado Publishing</strong> for <strong>Early Childhood Education</strong> — a creative, playful, and up-to-date collection featuring characters that depict everyday situations and experiences of children. These materials connect students to the cultural heritage knowledge (aligned with the Brazilian National Common Curricular Base - BNCC) and promote the development of social, individual, and cognitive skills appropriate for each age group. <br/><br/> For <strong>Elementary School</strong>, we work with the <strong>Mackenzie Teaching System</strong>, which follows a pedagogical model aligned with a Christian worldview and the understanding that all knowledge comes from God, serving as the converging point of all reasoning.'
-    },
-    title13:{
-      pt:'Venha conhecer a Escola Batista Shalon e os diferenciais de uma educação por princípios!',
-      en:'Come visit Shalon Baptist School and discover the difference of a Principle-Based education!'
     },
   },
   button: {
@@ -295,22 +307,7 @@ module.exports = {
       en: "Website by Nami Consultoria",
     },
   },
-  services: {
-    header: {
-      title1: {
-        pt: 'NOSSOS',
-        en: ''
-      },
-      title2: {
-        pt: 'SERVIÇOS',
-        en: ''
-      },
-      text: {
-        pt: 'Prestamos um serviço personalizado com o atendimento e as estratégias ideais para você.',
-        en: ''
-      }
-    }
-  },
+
   images:{
     img1: {
       pt: '../img/soberania.png',
