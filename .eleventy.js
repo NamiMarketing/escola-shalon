@@ -1,4 +1,7 @@
 const { DateTime } = require("luxon");
+const i18n = require("eleventy-plugin-i18n");
+const translations = require("./src/_data/i18n");
+
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./src/css");
@@ -9,6 +12,10 @@ module.exports = function (eleventyConfig) {
     return DateTime.fromJSDate(dateObj).setLocale(locale).toFormat('MMMM yyyy');
   });
   
+  eleventyConfig.addPlugin(i18n, {
+    translations
+  });
+
   eleventyConfig.addNunjucksFilter("excludeFromCollection", function (collection=[], pageUrl=this.ctx.page.url) {
     return collection.filter(post => post.url !== pageUrl);
   });

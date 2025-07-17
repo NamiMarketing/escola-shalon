@@ -1,0 +1,4 @@
+[[redirects]]
+  from = "/"
+  to = "/pt"
+  status = 301

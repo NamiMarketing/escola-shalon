@@ -1,11 +1,13 @@
 <footer>
-  <div class="img"><img src="/img/shalon-logo.svg" alt="logo da escola shalon" /></div>
+  <a href="/{{ lang }}" class="img">
+    <img src="/img/shalon-logo.svg" alt="logo da escola shalon" />
+  </a>
   <div class="top">
     <div class="left">
       <p>
-        “Instrua a criança segundo os objetivos que você tem para ela, e mesmo
-        com o passar dos anos não se desviará deles.” <br /><br />
-        Provérbios 22:6
+        {{ "footer.text1" | i18n }}
+        <br /><br />
+        {{ "footer.text2" | i18n }}
       </p>
     </div>
     <div class="right">
@@ -30,6 +32,8 @@
   </div>
   <span class="divisoria-footer"></span>
 
-  <a href="https://namiconsultoria.com.br">2024 | Desenvolvido por Nami Consultoria</a>
+  <a href="https://namiconsultoria.com.br">
+  {{ "footer.nami" | i18n }}
+  </a>
 
 </footer>

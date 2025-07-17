@@ -88,11 +88,11 @@ nav {
   z-index: 123;
   background: $musgo-400;
   opacity: 80%;
-  >a{
-    height: 5.3rem;
-  }
-  >img{
+  .header-logo{
     width: 25rem;
+    img{
+      width: 100%;
+    }
   }
   ul {
     opacity: 100%;
@@ -233,7 +233,7 @@ nav {
     gap: 0;
     position: relative;
     height: 8rem;
-    img{
+    .header-logo{
       position: absolute;
       left: 2rem;
       width: 20rem;
@@ -332,7 +332,7 @@ nav {
     gap: 0;
     position: relative;
     height: 5.6rem;
-    img{
+    .header-logo{
       position: absolute;
       left: 1rem;
       width: 12rem;
@@ -930,6 +930,7 @@ header{
     position: absolute;
     left: 0;
     top: 25%;
+    max-width: 28%;
   }
   .alem-bot-left{
     position: absolute;
@@ -947,6 +948,7 @@ header{
     position: absolute;
     right: 0;
     top: 33%;
+    max-width: 50%;
   }
 }
 .emocional{
@@ -1031,6 +1033,8 @@ header{
     align-items: center;
     gap: 5.5rem;
     margin-bottom: 10rem;
+    flex-wrap: wrap;
+    justify-content: center;
     img{
       max-width: 17rem;
     }
@@ -1195,6 +1199,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     margin-top: 12rem;
+    padding-top: 12rem;
     h2{
       font-size: 4.8rem;
       line-height: 4.8rem;
