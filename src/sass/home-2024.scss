@@ -630,6 +630,65 @@ header{
       margin-bottom: 4rem;
     }
   }
+  .toggle-language {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    width: 65px;
+    height: 34px;
+    top: 2rem;
+    right: 6rem;
+  }
+  .toggle-language input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    background-color: $white;
+    border-radius: 30px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: 0.4s;
+  }
+  .slider::before {
+    position: absolute;
+    content: url(../img/brasil.svg);
+    left: 0;
+    bottom: 0;
+  }
+  .slider::after{
+    position: absolute;
+    content: url(../img/eua.svg);
+    right: 0;
+    bottom: 0;
+    transition: 0.4s;
+    opacity: 0;
+  }
+  input:checked + .slider::after{
+    opacity: 1;
+    transition: 0.4s;
+  }
+  input:checked + .slider::before{
+    opacity: 0;
+    transition: 0.4s;
+  }
+  .lang-selector{
+    position: absolute;
+    top: 5.6rem;
+    right: 6.3rem;
+    display: flex;
+    gap: 2.2rem;
+    p{
+      font-size: 1.4rem;
+      color: $white;
+      font-weight: 500;;
+    }
+  }
 }
 .perfeita{
   display: flex;
@@ -1312,6 +1371,26 @@ footer {
         margin-bottom: 3rem;
       }
     }
+    .toggle-language {
+    width: 44px;
+    height: 25px;
+    top: 2rem;
+    right: 2rem;
+  }
+  .slider::before {
+    content: url(../img/brasil-mob.svg);
+  }
+  .slider::after{
+    content: url(../img/eua-mob.svg);
+  }
+  .lang-selector{
+    top: 4.5rem;
+    right: 2.3rem;
+    gap: 1rem;
+    p{
+      font-size: 1.2rem;
+    }
+  }
   }
   .perfeita{
     justify-content: space-between;

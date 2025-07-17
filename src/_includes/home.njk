@@ -31,6 +31,14 @@
     </h1>
     <a href="https://api.whatsapp.com/send?phone=5541995980198" class="darkGreenButton">{{ "button.text1" | i18n }}</a>
   </div>
+  <label class="toggle-language">
+    <input type="checkbox" id="lang-toggle" {% if locale === 'en-US' %} checked {% endif %}>
+    <span class="slider"></span>
+  </label>
+  <div class="lang-selector">
+    <p>PT</p>
+    <p>EN</p>
+  </div>
 </header>
 
 
@@ -395,3 +403,19 @@ Matrículas 2025 abertas!
     showImmediately: true
 });
 </script> -->
+
+<script>
+   document.getElementById("lang-toggle").addEventListener("change", function () {
+  const selectedLang = this.checked ? 'en' : 'pt';
+  urlHandler(selectedLang);
+});
+
+function urlHandler(lang) {
+  // Redireciona para a versão do idioma
+  if (lang === 'pt') {
+    window.location.href = '/pt';
+  } else if (lang === 'en') {
+    window.location.href = '/en';
+  }
+}
+</script>
