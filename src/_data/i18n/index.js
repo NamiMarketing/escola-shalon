@@ -286,7 +286,7 @@ module.exports = {
     },
     text2:{
       pt: "Agende sua visita",
-      en: "Schedule your visit",
+      en: "Visit Us",
     },
     text3:{
       pt: "Quero Saber Mais",
