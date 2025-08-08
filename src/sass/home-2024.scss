@@ -1854,6 +1854,7 @@ footer {
       flex-direction: column;
       align-items: center;
       width: 80vw;
+      gap: 4rem;
   
       .left {
         display: flex;
@@ -1869,14 +1870,20 @@ footer {
           text-align: center;
         }
       }
-  
+      .center{
+        gap: 1rem;
+      p {
+          font-size: 1.6rem;
+          text-align: center;
+        }
+      }
       .right {
         display: flex;
         flex-direction: column;
         margin-right: 0rem;
         z-index: 3;
         align-items: center;
-        margin-top: 3rem;
+        margin-top: 1rem;
   
         a {
           font-weight: 400;
