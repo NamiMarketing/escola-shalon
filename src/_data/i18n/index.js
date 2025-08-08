@@ -302,6 +302,18 @@ module.exports = {
       pt: "Provérbios 22:6",
       en: "Proverbs 22:6 (NIV)",
     },
+    text3: {
+      pt: "N4 e N5 – 30 vagas por turma",
+      en: "N4 and N5 – 30 seats per class",
+    },
+    text4: {
+      pt: "1º A e 1º B – 23 vagas por turma",
+      en: "1st A and 1st B – 23 seats per class",
+    },
+    text5: {
+      pt: "2º A, 2º B, 3º, 4º, 5º, 6º, 7º, 8º, 9º A e 9º B – 28 vagas por turma",
+      en: "2nd A, 2nd B, 3rd, 4th, 5th, 6th, 7th, 8th, 9th A and 9th B – 28 seats per class",
+    },
     nami: {
       pt: "Desenvolvido por Nami Consultoria",
       en: "Website by Nami Consultoria",

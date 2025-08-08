@@ -1239,14 +1239,14 @@ footer {
   }
   .top {
     display: flex;
-    justify-content: space-between;
     width: 80vw;
-
+    gap: 5rem;
     .left {
       display: flex;
       flex-direction: column;
       z-index: 56;
       margin-top: 2rem;
+      flex: 1;
       p {
         max-width: 31.4rem;
         font-weight: 400;
@@ -1256,12 +1256,24 @@ footer {
         color: $cinza;
       }
     }
-
+    .center{
+      display: flex;
+      flex-direction: column;
+      z-index: 3;
+      flex: 1;
+      gap: 2rem;
+      p {
+        font-size: 2rem;
+        font-weight: 400;
+        color: $cinza;
+      }
+      
+    }
     .right {
       display: flex;
       flex-direction: column;
-      margin-right: 10rem;
       z-index: 3;
+      flex: 1;
       a {
         font-weight: 400;
         font-size: 2rem;
