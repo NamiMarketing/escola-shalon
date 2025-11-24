@@ -315,8 +315,12 @@ module.exports = {
       en: "2nd - 25 seats",
     },
     text6: {
-      pt: "3º, 4º, 5º, 6º, 7º, 8º e 9º - 28 vagas por turma",
-      en: "3rd, 4th, 5th, 6th, 7th, 8th and 9th - 28 seats per class",
+      pt: "3º, 4º, 5º e 8º - 28 vagas por turma",
+      en: "3rd, 4th, 5th and 8th - 28 seats per class",
+    },
+    text7: {
+      pt: "6º, 7º e 9º - 30 vagas por turma",
+      en: "6th, 7th and 9th - 30 seats per class",
     },
     nami: {
       pt: "Desenvolvido por Nami Consultoria",
