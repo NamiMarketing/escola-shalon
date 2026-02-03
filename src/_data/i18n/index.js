@@ -303,24 +303,36 @@ module.exports = {
       en: "Proverbs 22:6 (NIV)",
     },
     text3: {
-      pt: "N4 e N5 - 15 vagas por turma",
-      en: "N4 and N5 - 15 seats per class",
+      pt: "1º ano - 23 vagas",
+      en: "1st year - 23 seats",
     },
     text4: {
-      pt: "1º - 23 vagas",
-      en: "1st - 23 seats",
+      pt: "2º ano - 25 vagas",
+      en: "2nd year - 25 seats",
     },
     text5: {
-      pt: "2º - 25 vagas",
-      en: "2nd - 25 seats",
+      pt: "3º ano - 23 vagas",
+      en: "3rd year - 23 seats",
     },
     text6: {
-      pt: "3º, 4º, 5º e 8º - 28 vagas por turma",
-      en: "3rd, 4th, 5th and 8th - 28 seats per class",
+      pt: "4º e 5º ano - 27 vagas",
+      en: "4th and 5th year - 27 seats",
     },
     text7: {
-      pt: "6º, 7º e 9º - 30 vagas por turma",
-      en: "6th, 7th and 9th - 30 seats per class",
+      pt: "6º ano - 28 vagas",
+      en: "6th year - 28 seats",
+    },
+    text8: {
+      pt: "7º ano - 31 vagas",
+      en: "7th year - 31 seats",
+    },
+    text9: {
+      pt: "8º ano - 26 vagas",
+      en: "8th year - 26 seats",
+    },
+    text10: {
+      pt: "9º ano - 29 vagas",
+      en: "9th year - 29 seats",
     },
     nami: {
       pt: "Desenvolvido por Nami Consultoria",
