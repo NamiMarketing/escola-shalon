@@ -41,8 +41,6 @@
   </div>
 </header>
 
-
-
 <section class="perfeita">
   <div class="perfeita-left">
     <h2 class="laranja">{{ "home.title1" | i18n }}</h2>
@@ -388,7 +386,7 @@
 
 {% include 'footer.njk' %}
 
-<!-- <script>
+<script>
   const myPopup = new Popup({
 id: "my-popup",
 title: "My First Popup",
@@ -397,12 +395,13 @@ hideCloseButton: false,
 hideTitle: true,
 font: "omnes-pro",
 content: `
-{{ "pop" | i18n }}
-{btn-darkGreenButton}[<a target="_blank" href="https://api.whatsapp.com/send?phone=5541995980198">{{ "button.text2" | i18n }}!</a>]
+{{ "pop1" | i18n }}
+{{ "pop2" | i18n }}
+{btn-darkGreenButton}[<a target="_blank" href="https://api.whatsapp.com/send?phone=5541995980198&text=Olá! Vim do site e gostaria de informações sobre as vagas na Escola Batista Shalon.">{{ "button.text4" | i18n }}</a>]
    `,
     showImmediately: true
 });
-</script> -->
+</script>
 
 <script>
    document.getElementById("lang-toggle").addEventListener("change", function () {

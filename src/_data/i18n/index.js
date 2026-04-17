@@ -292,6 +292,10 @@ module.exports = {
       pt: "Quero Saber Mais",
       en: "Learn More",
     },
+    text4:{
+      pt: "Conferir vagas",
+      en: "Check availability",
+    },
   },
   footer: {
     text1: {
@@ -339,9 +343,13 @@ module.exports = {
       en: "Website by Nami Consultoria",
     },
   },
-  pop: {
-    pt: "Matrículas 2026 Abertas!",
-    en: "2026 Enrollment Now Open!",
+  pop1: {
+    pt: "Seu filho já tem vaga para 2026?",
+    en: "Does your child already have a spot for 2026?",
+  },
+  pop2: {
+    pt: "Vagas limitadas do 1º ao 9º ano. Garanta a vaga antes do encerramento.",
+    en: "Limited spots available from 1st to 9th grade. Secure your child’s spot before enrollment closes.",
   },
 
   images:{
