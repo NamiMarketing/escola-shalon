@@ -4,55 +4,37 @@
 .popup.my-popup .popup-content{
   
   width: unset!important ;
-  border-radius: 40px!important;
+  border-radius: 50px!important;
   &::before{
     content:"" url(../img/popup.png);
-    width: 100% !important;
-    height: 100% !important;
-    background-color: #C5D15E ;
-    border-radius: 40px; 
+  background-color: #C5D15E ;
+  border-radius: 50px; 
   }
   .popup-header{
-    margin: 0 !important;
-    .popup-close{
-      color: white;
-      font-size: 8rem;
-      text-shadow: 0 4px 4px #00000040;
-    }
+    margin:0 !important
   }
   .popup-body{
     position: absolute;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    top: 45%;
-    transform: translateY(-50%);
-    left: 7rem;
+    top: 40%;
+    left: 47%;
     z-index: 10;
-    text-align: left;
-    gap: 2rem;
+    transform: translateX(-50%);
     p{
-      font-size: 2.6rem;
-      color: white;
-      font-weight: 500;
-      width: 41rem;
-    }
-    p:first-of-type{
-      color: $verde-600;
-      font-weight: 600;
       font-size: 3rem;
-      line-height: 3.4rem;
-      letter-spacing: 1.5px;
+      color: white;
+      font-weight: 600;
       text-transform: uppercase;
+      width: 43rem;
     }
     button{
       width: 24rem;
-      padding: 1.1rem 3rem 1.3rem;
+      padding: 1.3rem 1.3rem;
       font-size: 2rem;
       border-radius: 50px;
-      margin-top: 3rem;
+      margin: auto;
       a{ 
-        font-weight: 500;
         color: white;
       }
       &:hover {
@@ -61,50 +43,25 @@
     }
   }
   @media screen and (max-width:700px){
-    position: relative;
-    border-radius: 22px !important;
-    width: 33rem !important;
-    height: 30rem !important;
+
     &::before{
-      content: "";
-      background-image: url(../img/popup-mobile.png);
-      background-size: cover; /* Se quiser ver a imagem toda sem cortar, mude para 'contain' */
-      background-position: center;
-      background-repeat: no-repeat;
-      display: block;
-      border-radius: 22px;
-      height: 30rem !important;
-      width: 33rem !important;
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: -1;
+      content: url(../img/popup-mobile.png);
     }
-    .popup-header{
-      .popup-close{
-        top: 1rem;
-        right: 2rem;
-        font-size: 5rem;
-      }
+    .popup-close{
+      top: 1rem;
+      right: 2rem
     }
     .popup-body{
-      top: 50%;
-      left: 2rem;
+      top: 35%;
+      left: 47%;
       z-index: 10;
-      transform: translateY(-50%);
-      margin: 0;
       p{
         font-size: 1.6rem;
-        width: 13.5rem;
-      }
-      p:first-of-type{
-        font-size: 1.6rem;
-        line-height: 1.8rem;
-        letter-spacing: 0%;
+        width: 18rem;
       }
       button{
-        width: 14rem;
-        padding: 0.4rem 1rem 0.6rem;
+        width: 16rem;
+        padding: 0.6rem 1rem;
         line-height: 1.2rem;
         font-size: 1.4rem;
         border-radius: 20px;
@@ -961,7 +918,7 @@ header{
 }
 .metodologia{
   position: relative;
-  margin-bottom: 0rem;
+  margin-bottom: 10rem;
   img{
     width: 100%;
   }
@@ -1001,7 +958,7 @@ header{
     font-weight: 600;
     text-align: center;
     width: 44rem;
-    margin-top: 6rem;
+    margin-top: 10rem;
   }
   p{
     font-size: 2.3rem;
@@ -1158,7 +1115,7 @@ header{
   flex-direction: column;
   justify-content: center;
   place-items: center;
-  margin-top: 15rem;
+  margin-top: 8rem;
   position: relative;
   .parceiros-left{
     position: absolute;
@@ -1673,7 +1630,7 @@ footer {
       font-size: 2.8rem;
       line-height: 2.8rem;
       width: 32rem;
-      margin-top: 0rem;
+      margin-top: 5rem;
     }
     p{
       font-size: 1.6rem;
@@ -1799,7 +1756,7 @@ footer {
     }
   }
   .nossos-parceiros {
-    margin-top: 5rem;
+    margin-top: 3rem;
     position: relative;
     h2{
       font-size: 2.8rem;
