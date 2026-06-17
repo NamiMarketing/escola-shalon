@@ -351,6 +351,28 @@ module.exports = {
     pt: "Vagas limitadas do 1º ao 9º ano. Garanta a vaga antes do encerramento.",
     en: "Limited spots available from 1st to 9th grade. Secure your child’s spot before enrollment closes.",
   },
+  popup2027: {
+    tag: {
+      pt: "MATRÍCULAS 2027",
+      en: "ENROLLMENT 2027",
+    },
+    title: {
+      pt: "EDUCANDO POR PRINCÍPIOS, PREPARANDO PARA O FUTURO.",
+      en: "EDUCATING THROUGH PRINCIPLES, PREPARING FOR THE FUTURE.",
+    },
+    text: {
+      pt: "As rematrículas para 2027 já estão abertas e as vagas do 1º ao 9º ano são limitadas. Garanta agora a vaga do seu filho para o próximo ano letivo.",
+      en: "Re-enrollment for 2027 is now open and spots from 1st to 9th grade are limited. Secure your child's spot for the next school year now.",
+    },
+    button: {
+      pt: "CONFERIR VAGAS",
+      en: "CHECK AVAILABILITY",
+    },
+    question: {
+      pt: "QUAL TURMA VOCÊ PROCURA?",
+      en: "WHICH GRADE ARE YOU LOOKING FOR?",
+    },
+  },
 
   images:{
     img1: {
