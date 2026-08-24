@@ -1,0 +1,137 @@
+<nav class="nav2" data-scroll-section>
+  <a href="/{{ lang }}">
+    <img src="../../img/shalon-logo.svg" alt="logo escola batista shalon">
+  </a>
+  <input class="menu-btn" type="checkbox" id="menu-btn" />
+  <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+  <ul class="menu">
+    <li><a href="/{{ lang }}">{{ "nav.home" | i18n }}</a></li>
+
+    <li><a href="/pt/blog">{{ "nav.link4" | i18n }}</a></li>
+
+    <li><a href="/pt/contato">{{ "nav.link5" | i18n }}</a></li>
+
+    <li><a href="/{{ lang }}/faq">{{ "nav.link6" | i18n }}</a></li>
+
+    <label class="menu-icon-inside mobile-only" for="menu-btn">
+      <span class="navicon"></span
+    ></label>
+  </ul>
+</nav>
+
+<section class="faq">
+  <h1>{{ "faq.title" | i18n }}</h1>
+
+  <div class="faq-lista">
+    <details class="faq-item">
+      <summary>
+        <h2>{{ "faq.q1" | i18n }}</h2>
+        <span class="faq-toggle">
+          <img class="faq-toggle-mais" src="../../img/faq-plus.svg" alt="" width="40" height="40" />
+          <img class="faq-toggle-menos" src="../../img/faq-minus.svg" alt="" width="40" height="40" />
+        </span>
+      </summary>
+      <div class="faq-resposta">
+        <p>{{ "faq.a1" | i18n }}</p>
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary>
+        <h2>{{ "faq.q2" | i18n }}</h2>
+        <span class="faq-toggle">
+          <img class="faq-toggle-mais" src="../../img/faq-plus.svg" alt="" width="40" height="40" />
+          <img class="faq-toggle-menos" src="../../img/faq-minus.svg" alt="" width="40" height="40" />
+        </span>
+      </summary>
+      <div class="faq-resposta">
+        <p>{{ "faq.a2p1" | i18n | safe }}</p>
+        <p>{{ "faq.a2p2" | i18n | safe }}</p>
+        <p>{{ "faq.a2p3" | i18n | safe }}</p>
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary>
+        <h2>{{ "faq.q3" | i18n }}</h2>
+        <span class="faq-toggle">
+          <img class="faq-toggle-mais" src="../../img/faq-plus.svg" alt="" width="40" height="40" />
+          <img class="faq-toggle-menos" src="../../img/faq-minus.svg" alt="" width="40" height="40" />
+        </span>
+      </summary>
+      <div class="faq-resposta">
+        <p>{{ "faq.a3p1" | i18n }}</p>
+        <p>{{ "faq.a3p2" | i18n | safe }}</p>
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary>
+        <h2>{{ "faq.q4" | i18n }}</h2>
+        <span class="faq-toggle">
+          <img class="faq-toggle-mais" src="../../img/faq-plus.svg" alt="" width="40" height="40" />
+          <img class="faq-toggle-menos" src="../../img/faq-minus.svg" alt="" width="40" height="40" />
+        </span>
+      </summary>
+      <div class="faq-resposta">
+        <p>{{ "faq.a4intro" | i18n }}</p>
+        <ul>
+          <li>{{ "faq.a4item1" | i18n }}</li>
+          <li>{{ "faq.a4item2" | i18n }}</li>
+          <li>{{ "faq.a4item3" | i18n }}</li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary>
+        <h2>{{ "faq.q5" | i18n }}</h2>
+        <span class="faq-toggle">
+          <img class="faq-toggle-mais" src="../../img/faq-plus.svg" alt="" width="40" height="40" />
+          <img class="faq-toggle-menos" src="../../img/faq-minus.svg" alt="" width="40" height="40" />
+        </span>
+      </summary>
+      <div class="faq-resposta">
+        <p>{{ "faq.a5p1" | i18n }}</p>
+        <p>{{ "faq.a5p2" | i18n }}</p>
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary>
+        <h2>{{ "faq.q6" | i18n }}</h2>
+        <span class="faq-toggle">
+          <img class="faq-toggle-mais" src="../../img/faq-plus.svg" alt="" width="40" height="40" />
+          <img class="faq-toggle-menos" src="../../img/faq-minus.svg" alt="" width="40" height="40" />
+        </span>
+      </summary>
+      <div class="faq-resposta">
+        <p>{{ "faq.a6" | i18n }}</p>
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary>
+        <h2>{{ "faq.q7" | i18n }}</h2>
+        <span class="faq-toggle">
+          <img class="faq-toggle-mais" src="../../img/faq-plus.svg" alt="" width="40" height="40" />
+          <img class="faq-toggle-menos" src="../../img/faq-minus.svg" alt="" width="40" height="40" />
+        </span>
+      </summary>
+      <div class="faq-resposta">
+        <p>{{ "faq.a7" | i18n }}</p>
+      </div>
+    </details>
+  </div>
+
+  <div class="faq-observacoes">
+    <h2>{{ "faq.obsTitle" | i18n }}</h2>
+    <p>{{ "faq.obsIntro" | i18n }}</p>
+    <ul>
+      <li>{{ "faq.obsItem1" | i18n }}</li>
+      <li>{{ "faq.obsItem2" | i18n }}</li>
+    </ul>
+  </div>
+</section>
+
+{% include 'footer.njk' %}

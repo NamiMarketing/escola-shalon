@@ -1,5 +1,9 @@
 module.exports = {
   nav: {
+    home: {
+      pt: "INÍCIO",
+      en: "HOME",
+    },
     link1: {
       pt: "ENSINO",
       en: "ACADEMICS",
@@ -19,6 +23,10 @@ module.exports = {
     link5: {
       pt: "CONTATO",
       en: "CONTACT",
+    },
+    link6: {
+      pt: "FAQ",
+      en: "FAQ",
     },
   },
   home: {
@@ -371,6 +379,121 @@ module.exports = {
     question: {
       pt: "QUAL TURMA VOCÊ PROCURA?",
       en: "WHICH GRADE ARE YOU LOOKING FOR?",
+    },
+  },
+
+  faq: {
+    title: {
+      pt: "Perguntas frequentes",
+      en: "Frequently asked questions",
+    },
+
+    q1: {
+      pt: "Quando começam as rematrículas?",
+      en: "When does re-enrollment open?",
+    },
+    a1: {
+      pt: "De 15 de setembro a 15 de outubro.",
+      en: "From September 15 to October 15.",
+    },
+
+    q2: {
+      pt: "Qual é o valor da 1ª parcela?",
+      en: "How much is the first installment?",
+    },
+    a2p1: {
+      pt: "A 1ª parcela terá 50% de desconto para pagamento via PIX até o dia <strong>15/10.</strong>",
+      en: "The first installment has a 50% discount for payments made by PIX until <strong>October 15.</strong>",
+    },
+    a2p2: {
+      pt: "R$ 625,00 – F1 e F2<br />R$ 575,00 – Educação Infantil",
+      en: "R$ 625.00 – Elementary I and II<br />R$ 575.00 – Early Childhood Education",
+    },
+    a2p3: {
+      pt: "PIX – CNPJ: 68.597.723/0001-53<br /><em>Enviar o comprovante via WhatsApp.</em>",
+      en: "PIX – Tax ID (CNPJ): 68.597.723/0001-53<br /><em>Send the receipt via WhatsApp.</em>",
+    },
+
+    q3: {
+      pt: "Posso pagar no cartão de crédito?",
+      en: "Can I pay by credit card?",
+    },
+    a3p1: {
+      pt: "Sim. O pagamento poderá ser realizado em até 3x, considerando o valor integral de R$750,00, para pagamentos realizados até o dia 15/10.",
+      en: "Yes. Payment can be split into up to 3 installments, based on the full amount of R$750.00, for payments made by October 15.",
+    },
+    a3p2: {
+      pt: "<em>Solicite o link para pagamento via WhatsApp.</em>",
+      en: "<em>Request the payment link via WhatsApp.</em>",
+    },
+
+    q4: {
+      pt: "Quais benefícios terei ao fazer a rematrícula nesse período?",
+      en: "What benefits do I get by re-enrolling during this period?",
+    },
+    a4intro: {
+      pt: "São 3 benefícios:",
+      en: "There are 3 benefits:",
+    },
+    a4item1: {
+      pt: "50% de desconto na 1ª parcela;",
+      en: "50% off the first installment;",
+    },
+    a4item2: {
+      pt: "Voucher de R$ 200,00 para o material didático;",
+      en: "A R$ 200.00 voucher for course materials;",
+    },
+    a4item3: {
+      pt: "Uma Action Camera exclusiva.",
+      en: "An exclusive action camera.",
+    },
+
+    q5: {
+      pt: "Quando receberei esses benefícios?",
+      en: "When will I receive these benefits?",
+    },
+    a5p1: {
+      pt: "O voucher para os livros será enviado até o dia 30/11/2026. O voucher é individual e intransferível.",
+      en: "The book voucher will be sent by November 30, 2026. The voucher is personal and non-transferable.",
+    },
+    a5p2: {
+      pt: "A Action Camera poderá ser retirada na secretaria após a assinatura do contrato, que será disponibilizado em até 5 dias após a rematrícula.",
+      en: "The action camera can be picked up at the school office after the contract is signed, which will be available within 5 days of re-enrollment.",
+    },
+
+    q6: {
+      pt: "E se eu perder o prazo da rematrícula?",
+      en: "What if I miss the re-enrollment deadline?",
+    },
+    a6: {
+      pt: "Infelizmente, os benefícios são exclusivos para rematrículas realizadas dentro desse período.",
+      en: "Unfortunately, the benefits are exclusive to re-enrollments completed within that period.",
+    },
+
+    q7: {
+      pt: "As demais parcelas serão a partir de janeiro?",
+      en: "Do the remaining installments start in January?",
+    },
+    a7: {
+      pt: "Sim. As demais parcelas serão de janeiro a dezembro de 2027, com vencimento todo dia 7 e 5% de desconto para pagamento até a data do vencimento.",
+      en: "Yes. The remaining installments run from January to December 2027, due on the 7th of each month, with a 5% discount for payment by the due date.",
+    },
+
+    obsTitle: {
+      pt: "Observações importantes",
+      en: "Important notes",
+    },
+    obsIntro: {
+      pt: "A rematrícula e a garantia da vaga para 2027 somente serão efetivadas mediante:",
+      en: "Re-enrollment and your child’s place for 2027 are only confirmed upon:",
+    },
+    obsItem1: {
+      pt: "pagamento da 1ª parcela;",
+      en: "payment of the first installment;",
+    },
+    obsItem2: {
+      pt: "estar adimplente com as mensalidades do ano de 2026.",
+      en: "being up to date with 2026 tuition payments.",
     },
   },
 
