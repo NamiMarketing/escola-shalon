@@ -393,8 +393,8 @@ module.exports = {
       en: "When does re-enrollment open?",
     },
     a1: {
-      pt: "De 15 de setembro a 15 de outubro.",
-      en: "From September 15 to October 15.",
+      pt: "De 15 de setembro a 15 de outubro de 2026.",
+      en: "From September 15 to October 15, 2026.",
     },
 
     q2: {
@@ -402,8 +402,8 @@ module.exports = {
       en: "How much is the first installment?",
     },
     a2p1: {
-      pt: "A 1ª parcela terá 50% de desconto para pagamento via PIX até o dia <strong>15/10.</strong>",
-      en: "The first installment has a 50% discount for payments made by PIX until <strong>October 15.</strong>",
+      pt: "A 1ª parcela terá 50% de desconto para pagamento via PIX até o dia <strong>15/10/2026</strong>",
+      en: "The first installment has a 50% discount for payments made by PIX until <strong>October 15, 2026</strong>",
     },
     a2p2: {
       pt: "R$ 625,00 – F1 e F2<br />R$ 575,00 – Educação Infantil",
@@ -419,8 +419,8 @@ module.exports = {
       en: "Can I pay by credit card?",
     },
     a3p1: {
-      pt: "Sim. O pagamento poderá ser realizado em até 3x, considerando o valor integral de R$750,00, para pagamentos realizados até o dia 15/10.",
-      en: "Yes. Payment can be split into up to 3 installments, based on the full amount of R$750.00, for payments made by October 15.",
+      pt: "Sim. O pagamento poderá ser realizado em até 3x, considerando o valor de R$750,00, para pagamentos realizados até o dia 15/10/26.",
+      en: "Yes. Payment can be split into up to 3 installments, based on the amount of R$750.00, for payments made by October 15, 2026.",
     },
     a3p2: {
       pt: "<em>Solicite o link para pagamento via WhatsApp.</em>",
