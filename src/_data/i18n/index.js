@@ -397,6 +397,27 @@ module.exports = {
       en: "From September 15 to October 15, 2026.",
     },
 
+    q8: {
+      pt: "Quais são os valores para 2027?",
+      en: "What are the values for 2027?",
+    },
+    a8p1: {
+      pt: "Nosso plano de pagamento é de 13 parcelas de R$ 1.250,00.",
+      en: "Our payment plan consists of 13 installments of R$ 1,250.00.",
+    },
+    a8p2: {
+      pt: "1ª parcela no ato da rematrícula (garanta seu benefício) e as demais parcelas de Janeiro a Dezembro de 2027, com 5% de desconto para pagamento no dia do vencimento 7 de cada mês.",
+      en: "The first installment is due at the time of re-enrollment (to secure your benefit), and the remaining installments are from January to December 2027, with a 5% discount for payment on the due date (the 7th of each month).",
+    },
+    a8p3: {
+      pt: "Valor da anuidade sem o benefício e sem os 5% de desconto R$ 16.250,00.",
+      en: "The annual fee without the benefit and without the 5% discount is R$ 16,250.00.",
+    },
+    a8p4: {
+      pt: "E fazendo a rematricula no período estipulado você conta com BENEFÍCIOS EXCLUSIVOS! Confira nas respostas abaixo!",
+      en: "By re-enrolling within the specified period, you will receive EXCLUSIVE BENEFITS! Check the answers below!",
+    },
+
     q2: {
       pt: "Qual é o valor da 1ª parcela?",
       en: "How much is the first installment?",
